@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class BN\Expression\ExpressionEvaluator | BN-PHP - Big Number data type for PHP</title>
+
+	<script type="text/javascript" src="resources/combined.js?670845959"></script>
+	<script type="text/javascript" src="elementlist.js?1292720534"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-BN.html">BN<span></span></a>
+						<ul>
+				<li><a href="namespace-BN.Collections.html">Collections</a>
+						</li>
+				<li class="active"><a href="namespace-BN.Expression.html">Expression</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-BN.Expression.Associativity.html">Associativity</a></li>
+				<li><a href="class-BN.Expression.Brackets.html">Brackets</a></li>
+				<li class="active"><a href="class-BN.Expression.ExpressionEvaluator.html">ExpressionEvaluator</a></li>
+				<li><a href="class-BN.Expression.ExpressionPreparation.html">ExpressionPreparation</a></li>
+				<li><a href="class-BN.Expression.Operator.html">Operator</a></li>
+				<li><a href="class-BN.Expression.OperatorCallback.html">OperatorCallback</a></li>
+				<li><a href="class-BN.Expression.Operators.html">Operators</a></li>
+				<li><a href="class-BN.Expression.OperatorsFactory.html">OperatorsFactory</a></li>
+				<li><a href="class-BN.Expression.PostfixCalculator.html">PostfixCalculator</a></li>
+				<li><a href="class-BN.Expression.ShuntingYardParser.html">ShuntingYardParser</a></li>
+				<li><a href="class-BN.Expression.Tokenizer.html">Tokenizer</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-BN.Expression.IBrackets.html">IBrackets</a></li>
+				<li><a href="class-BN.Expression.IOperator.html">IOperator</a></li>
+				<li><a href="class-BN.Expression.ITokenizer.html">ITokenizer</a></li>
+			</ul>
+
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-BN.Expression.MismatchedBracketException.html">MismatchedBracketException</a></li>
+				<li><a href="class-BN.Expression.NumberCallbackException.html">NumberCallbackException</a></li>
+				<li><a href="class-BN.Expression.ParserException.html">ParserException</a></li>
+				<li><a href="class-BN.Expression.PostfixException.html">PostfixException</a></li>
+			</ul>
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-BN.Expression.html" title="Summary of BN\Expression"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class ExpressionEvaluator</h1>
+
+
+	<div class="description">
+	
+<p>For evaluation of mathematical expression in infix notation.</p>
+
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		<b>Final</b><br />
+		
+		<b>Namespace:</b> <a href="namespace-BN.html">BN</a>\<a href="namespace-BN.Expression.html">Expression</a><br />
+		
+
+		<b>Located at</b> <a href="source-class-BN.Expression.ExpressionEvaluator.html#10-109" title="Go to source code">lib/bn-php/expression/evaluator/ExpressionEvaluator.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-BN.Expression.ExpressionEvaluator.html#22-34" title="Go to source code">__construct</a>( <span><code><a href="class-BN.Expression.ShuntingYardParser.html">BN\Expression\ShuntingYardParser</a></code> <var>$shuntingYard</var> = <span class="php-keyword1">null</span></span>, <span><code><a href="class-BN.Expression.PostfixCalculator.html">BN\Expression\PostfixCalculator</a></code> <var>$postfixCalculator</var> = <span class="php-keyword1">null</span></span>, <span><code><a href="class-BN.Expression.ExpressionPreparation.html">BN\Expression\ExpressionPreparation</a></code> <var>$preparation</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Initializes evaulator with ShuntingYardParser, PostfixCalculator and
+ExpressionPreparation. If any of argument is null then the corresponding object
+is created as new instance without any special settings.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Initializes evaulator with ShuntingYardParser, PostfixCalculator and
+ExpressionPreparation. If any of argument is null then the corresponding object
+is created as new instance without any special settings.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$shuntingYard</var></dt>
+					<dd><code><code><a href="class-BN.Expression.ShuntingYardParser.html">BN\Expression\ShuntingYardParser</a></code></code><br>$shuntingYard</dd>
+					<dt><var>$postfixCalculator</var></dt>
+					<dd><code><code><a href="class-BN.Expression.PostfixCalculator.html">BN\Expression\PostfixCalculator</a></code></code><br>$calculator</dd>
+					<dt><var>$preparation</var></dt>
+					<dd><code><code><a href="class-BN.Expression.ExpressionPreparation.html">BN\Expression\ExpressionPreparation</a></code></code><br>$preparation</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setOperators" id="_setOperators">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setOperators">#</a>
+		<code><a href="source-class-BN.Expression.ExpressionEvaluator.html#36-45" title="Go to source code">setOperators</a>( <span><code><a href="class-BN.Expression.Operators.html">BN\Expression\Operators</a></code> <var>$operators</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Set operators for parser and calculator. If operators are set then all
+operators are surrounded by space before parsing.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Set operators for parser and calculator. If operators are set then all
+operators are surrounded by space before parsing.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$operators</var></dt>
+					<dd><code><code><a href="class-BN.Expression.Operators.html">BN\Expression\Operators</a></code></code><br>$operators</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setVariables" id="_setVariables">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setVariables">#</a>
+		<code><a href="source-class-BN.Expression.ExpressionEvaluator.html#47-56" title="Go to source code">setVariables</a>( <span>array <var>$variables</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets variables which can be used in expression. Key from associative array is
+used as variable name and value is used for replacing name during parsing.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets variables which can be used in expression. Key from associative array is
+used as variable name and value is used for replacing name during parsing.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$variables</var></dt>
+					<dd><code>array</code><br>$variables</dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code>InvalidArgumentException</code><br>if variable name is not string or if it's numeric<br />
+				</div>
+
+				<h4>Example</h4>
+				<div class="list">
+						array('PI' =&gt; new BN\Number('3.14'));<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="resetVariables" id="_resetVariables">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_resetVariables">#</a>
+		<code><a href="source-class-BN.Expression.ExpressionEvaluator.html#58-63" title="Go to source code">resetVariables</a>( )</code>
+
+		<div class="description short">
+			
+<p>Clear all stored variables</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Clear all stored variables</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setBrackets" id="_setBrackets">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setBrackets">#</a>
+		<code><a href="source-class-BN.Expression.ExpressionEvaluator.html#65-72" title="Go to source code">setBrackets</a>( <span><code><a href="class-BN.Expression.IBrackets.html">BN\Expression\IBrackets</a></code> <var>$brackets</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets type of brackets used in expression. Default are round brackets ( )</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets type of brackets used in expression. Default are round brackets ( )</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$brackets</var></dt>
+					<dd><code><code><a href="class-BN.Expression.IBrackets.html">BN\Expression\IBrackets</a></code></code><br>$brackets</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="evaluate" id="_evaluate">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-BN.INumber.html">BN\INumber</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_evaluate">#</a>
+		<code><a href="source-class-BN.Expression.ExpressionEvaluator.html#74-89" title="Go to source code">evaluate</a>( <span>string <var>$expression</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Prepares expression before parsing, then expression is parsed with Shunting
+Yard algorithm and postfix expression is evaluated in postfix calculator. Adding
+spaces around operators is performed only if operators where added via method
+@method setOperators</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Prepares expression before parsing, then expression is parsed with Shunting
+Yard algorithm and postfix expression is evaluated in postfix calculator. Adding
+spaces around operators is performed only if operators where added via method
+@method setOperators</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$expression</var></dt>
+					<dd><code>string</code><br>$expression</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-BN.INumber.html">BN\INumber</a></code></code><br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-BN.Expression.ParserException.html">BN\Expression\ParserException</a></code></code><br />
+					<code><code><a href="class-BN.Expression.MismatchedBracketException.html">BN\Expression\MismatchedBracketException</a></code></code><br />
+					<code><code><a href="class-BN.Expression.PostfixException.html">BN\Expression\PostfixException</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		BN-PHP - Big Number data type for PHP API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

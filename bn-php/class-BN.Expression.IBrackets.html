@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Interface BN\Expression\IBrackets | BN-PHP - Big Number data type for PHP</title>
+
+	<script type="text/javascript" src="resources/combined.js?670845959"></script>
+	<script type="text/javascript" src="elementlist.js?1292720534"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-BN.html">BN<span></span></a>
+						<ul>
+				<li><a href="namespace-BN.Collections.html">Collections</a>
+						</li>
+				<li class="active"><a href="namespace-BN.Expression.html">Expression</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-BN.Expression.Associativity.html">Associativity</a></li>
+				<li><a href="class-BN.Expression.Brackets.html">Brackets</a></li>
+				<li><a href="class-BN.Expression.ExpressionEvaluator.html">ExpressionEvaluator</a></li>
+				<li><a href="class-BN.Expression.ExpressionPreparation.html">ExpressionPreparation</a></li>
+				<li><a href="class-BN.Expression.Operator.html">Operator</a></li>
+				<li><a href="class-BN.Expression.OperatorCallback.html">OperatorCallback</a></li>
+				<li><a href="class-BN.Expression.Operators.html">Operators</a></li>
+				<li><a href="class-BN.Expression.OperatorsFactory.html">OperatorsFactory</a></li>
+				<li><a href="class-BN.Expression.PostfixCalculator.html">PostfixCalculator</a></li>
+				<li><a href="class-BN.Expression.ShuntingYardParser.html">ShuntingYardParser</a></li>
+				<li><a href="class-BN.Expression.Tokenizer.html">Tokenizer</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li class="active"><a href="class-BN.Expression.IBrackets.html">IBrackets</a></li>
+				<li><a href="class-BN.Expression.IOperator.html">IOperator</a></li>
+				<li><a href="class-BN.Expression.ITokenizer.html">ITokenizer</a></li>
+			</ul>
+
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-BN.Expression.MismatchedBracketException.html">MismatchedBracketException</a></li>
+				<li><a href="class-BN.Expression.NumberCallbackException.html">NumberCallbackException</a></li>
+				<li><a href="class-BN.Expression.ParserException.html">ParserException</a></li>
+				<li><a href="class-BN.Expression.PostfixException.html">PostfixException</a></li>
+			</ul>
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-BN.Expression.html" title="Summary of BN\Expression"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Interface IBrackets</h1>
+
+
+	<div class="description">
+	
+<p>ShuntingYardParser use brackets for grouping operands with operands, so
+default associativity and precedence can be changed with brackets. Object which
+implements this interface represents one type of brackets, e.g. round brackets
+where left bracket is ( and right is equal to ).</p>
+
+	</div>
+
+
+
+
+
+	<div>
+		<h4>Direct known implementers</h4>
+			<a href="class-BN.Expression.Brackets.html">BN\Expression\Brackets</a>
+	</div>
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-BN.html">BN</a>\<a href="namespace-BN.Expression.html">Expression</a><br />
+		
+
+		<b>Located at</b> <a href="source-class-BN.Expression.IBrackets.html#10-48" title="Go to source code">lib/bn-php/expression/brackets/IBrackets.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="isLeftBracket" id="_isLeftBracket">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isLeftBracket">#</a>
+		<code><a href="source-class-BN.Expression.IBrackets.html#18-23" title="Go to source code">isLeftBracket</a>( <span>string <var>$leftBracket</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$leftBracket</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>Return true if parameter is left bracket<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isRightBracket" id="_isRightBracket">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isRightBracket">#</a>
+		<code><a href="source-class-BN.Expression.IBrackets.html#25-30" title="Go to source code">isRightBracket</a>( <span>string <var>$rightBracket</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$rightBracket</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>Return true if parameter is right bracket<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isBracket" id="_isBracket">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isBracket">#</a>
+		<code><a href="source-class-BN.Expression.IBrackets.html#32-37" title="Go to source code">isBracket</a>( <span>string <var>$bracket</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$bracket</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>Return true if parameter is left or right bracket<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getLeftBracket" id="_getLeftBracket">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getLeftBracket">#</a>
+		<code><a href="source-class-BN.Expression.IBrackets.html#39-42" title="Go to source code">getLeftBracket</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getRightBracket" id="_getRightBracket">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getRightBracket">#</a>
+		<code><a href="source-class-BN.Expression.IBrackets.html#44-47" title="Go to source code">getRightBracket</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		BN-PHP - Big Number data type for PHP API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

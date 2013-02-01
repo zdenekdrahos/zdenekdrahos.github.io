@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class BN\Expression\Operator | BN-PHP - Big Number data type for PHP</title>
+
+	<script type="text/javascript" src="resources/combined.js?670845959"></script>
+	<script type="text/javascript" src="elementlist.js?1292720534"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-BN.html">BN<span></span></a>
+						<ul>
+				<li><a href="namespace-BN.Collections.html">Collections</a>
+						</li>
+				<li class="active"><a href="namespace-BN.Expression.html">Expression</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-BN.Expression.Associativity.html">Associativity</a></li>
+				<li><a href="class-BN.Expression.Brackets.html">Brackets</a></li>
+				<li><a href="class-BN.Expression.ExpressionEvaluator.html">ExpressionEvaluator</a></li>
+				<li><a href="class-BN.Expression.ExpressionPreparation.html">ExpressionPreparation</a></li>
+				<li class="active"><a href="class-BN.Expression.Operator.html">Operator</a></li>
+				<li><a href="class-BN.Expression.OperatorCallback.html">OperatorCallback</a></li>
+				<li><a href="class-BN.Expression.Operators.html">Operators</a></li>
+				<li><a href="class-BN.Expression.OperatorsFactory.html">OperatorsFactory</a></li>
+				<li><a href="class-BN.Expression.PostfixCalculator.html">PostfixCalculator</a></li>
+				<li><a href="class-BN.Expression.ShuntingYardParser.html">ShuntingYardParser</a></li>
+				<li><a href="class-BN.Expression.Tokenizer.html">Tokenizer</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-BN.Expression.IBrackets.html">IBrackets</a></li>
+				<li><a href="class-BN.Expression.IOperator.html">IOperator</a></li>
+				<li><a href="class-BN.Expression.ITokenizer.html">ITokenizer</a></li>
+			</ul>
+
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-BN.Expression.MismatchedBracketException.html">MismatchedBracketException</a></li>
+				<li><a href="class-BN.Expression.NumberCallbackException.html">NumberCallbackException</a></li>
+				<li><a href="class-BN.Expression.ParserException.html">ParserException</a></li>
+				<li><a href="class-BN.Expression.PostfixException.html">PostfixException</a></li>
+			</ul>
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-BN.Expression.html" title="Summary of BN\Expression"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Operator</h1>
+
+
+	<div class="description">
+	
+<p>Representation of mathematical operator with unique symbol, precedence, type
+of associativity and arguments count.</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+<b><span>BN\Expression\Operator</span></b>			
+			 implements 
+				<a href="class-BN.Expression.IOperator.html"><span>BN\Expression\IOperator</span></a>
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-BN.html">BN</a>\<a href="namespace-BN.Expression.html">Expression</a><br />
+		
+
+		<b>Located at</b> <a href="source-class-BN.Expression.Operator.html#10-84" title="Go to source code">lib/bn-php/expression/operators/Operator.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-BN.Expression.Operator.html#25-39" title="Go to source code">__construct</a>( <span>string <var>$symbol</var></span>, <span>integer <var>$associativity</var></span>, <span><code><a href="class-BN.Expression.Associativity.html">BN\Expression\Associativity</a></code> <var>$precedence</var></span>, <span>mixed <var>$argumentsCount</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$symbol</var></dt>
+					<dd><code>string</code><br>$symbol</dd>
+					<dt><var>$associativity</var></dt>
+					<dd><code>integer</code><br>$precedence</dd>
+					<dt><var>$precedence</var></dt>
+					<dd><code><code><a href="class-BN.Expression.Associativity.html">BN\Expression\Associativity</a></code></code><br>$associativity</dd>
+					<dt><var>$argumentsCount</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code>InvalidArgumentException</code><br>If $symbol is not string, or it's empty string. Or if $precedence is not
+integer. If $associativity is not class constant of @see Associativity. If
+$argumentsCount is not integer &gt; 0.<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getSymbol" id="_getSymbol">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getSymbol">#</a>
+		<code><a href="source-class-BN.Expression.Operator.html#41-43" title="Go to source code">getSymbol</a>( )</code>
+
+		<div class="description short">
+			
+<p>Gets symbol of operator</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Gets symbol of operator</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BN.Expression.IOperator.html#_getSymbol">BN\Expression\IOperator::getSymbol()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getPrecedence" id="_getPrecedence">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getPrecedence">#</a>
+		<code><a href="source-class-BN.Expression.Operator.html#45-47" title="Go to source code">getPrecedence</a>( )</code>
+
+		<div class="description short">
+			
+<p>Gets precedence of the operator. The operator with the highest precedence
+should have the highest numbers. E.g. multiplication is before addition so
+operator * should have higher precedence than operator +</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Gets precedence of the operator. The operator with the highest precedence
+should have the highest numbers. E.g. multiplication is before addition so
+operator * should have higher precedence than operator +</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BN.Expression.IOperator.html#_getPrecedence">BN\Expression\IOperator::getPrecedence()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getAssociativity" id="_getAssociativity">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-BN.Expression.Associativity.html">BN\Expression\Associativity</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getAssociativity">#</a>
+		<code><a href="source-class-BN.Expression.Operator.html#49-51" title="Go to source code">getAssociativity</a>( )</code>
+
+		<div class="description short">
+			
+<p>Gets associativity of the operator. Left or right associativity determines
+how are grouped operators with same precedence if no brackets in expression.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Gets associativity of the operator. Left or right associativity determines
+how are grouped operators with same precedence if no brackets in expression.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-BN.Expression.Associativity.html">BN\Expression\Associativity</a></code></code><br>Returns class constant of @see Associativity class<br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BN.Expression.IOperator.html#_getAssociativity">BN\Expression\IOperator::getAssociativity()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getArgumentsCount" id="_getArgumentsCount">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getArgumentsCount">#</a>
+		<code><a href="source-class-BN.Expression.Operator.html#53-55" title="Go to source code">getArgumentsCount</a>( )</code>
+
+		<div class="description short">
+			
+<p>Gets number of arguments that operator must have for evaluating
+expression</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Gets number of arguments that operator must have for evaluating
+expression</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BN.Expression.IOperator.html#_getArgumentsCount">BN\Expression\IOperator::getArgumentsCount()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		BN-PHP - Big Number data type for PHP API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

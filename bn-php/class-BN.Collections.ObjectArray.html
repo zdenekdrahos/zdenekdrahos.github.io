@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class BN\Collections\ObjectArray | BN-PHP - Big Number data type for PHP</title>
+
+	<script type="text/javascript" src="resources/combined.js?670845959"></script>
+	<script type="text/javascript" src="elementlist.js?1292720534"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-BN.html">BN<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-BN.Collections.html">Collections</a>
+						</li>
+				<li><a href="namespace-BN.Expression.html">Expression</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-BN.Collections.LinearDataStructure.html">LinearDataStructure</a></li>
+				<li class="active"><a href="class-BN.Collections.ObjectArray.html">ObjectArray</a></li>
+				<li><a href="class-BN.Collections.Queue.html">Queue</a></li>
+				<li><a href="class-BN.Collections.Stack.html">Stack</a></li>
+			</ul>
+
+
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-BN.Collections.InvalidObjectStateException.html">InvalidObjectStateException</a></li>
+				<li><a href="class-BN.Collections.NullArgumentException.html">NullArgumentException</a></li>
+			</ul>
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-BN.Collections.html" title="Summary of BN\Collections"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class ObjectArray</h1>
+
+
+	<div class="description">
+	
+<p>Class representing associative array of objects, where objects have to
+implements specified interface or must be instanceof specified class.</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-BN.Collections.LinearDataStructure.html"><span>BN\Collections\LinearDataStructure</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b><span>BN\Collections\ObjectArray</span></b>			
+			 implements 
+<span>ArrayAccess</span>
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-BN.html">BN</a>\<a href="namespace-BN.Collections.html">Collections</a><br />
+		
+
+		<b>Located at</b> <a href="source-class-BN.Collections.ObjectArray.html#10-124" title="Go to source code">lib/bn-php/expression/collections/ObjectArray.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="setRequiredInterface" id="_setRequiredInterface">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setRequiredInterface">#</a>
+		<code><a href="source-class-BN.Collections.ObjectArray.html#21-27" title="Go to source code">setRequiredInterface</a>( <span>string <var>$interface</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the name of interface which inserted object have to implement</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the name of interface which inserted object have to implement</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$interface</var></dt>
+					<dd><code>string</code><br>$interface the interface name</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setRequiredClass" id="_setRequiredClass">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setRequiredClass">#</a>
+		<code><a href="source-class-BN.Collections.ObjectArray.html#29-36" title="Go to source code">setRequiredClass</a>( <span>string <var>$class</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the name of class which inserted object have to be instanceof or
+subclass of this class</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the name of class which inserted object have to be instanceof or
+subclass of this class</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$class</var></dt>
+					<dd><code>string</code><br>$class the class name</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="offsetSet" id="_offsetSet">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_offsetSet">#</a>
+		<code><a href="source-class-BN.Collections.ObjectArray.html#38-51" title="Go to source code">offsetSet</a>( <span>mixed <var>$offset</var></span>, <span>object <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Assings a value to the specified offset</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Assings a value to the specified offset</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$offset</var></dt>
+					<dd><code>mixed</code><br>$offset</dd>
+					<dt><var>$value</var></dt>
+					<dd><code>object</code><br>$value</dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code>InvalidArgumentException</code><br />
+				</div>
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code>ArrayAccess::offsetSet()</code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="offsetUnset" id="_offsetUnset">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_offsetUnset">#</a>
+		<code><a href="source-class-BN.Collections.ObjectArray.html#53-61" title="Go to source code">offsetUnset</a>( <span>mixed <var>$offset</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Unsets value at specified offset if this offset exists.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Unsets value at specified offset if this offset exists.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$offset</var></dt>
+					<dd><code>mixed</code><br>$offset</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code>ArrayAccess::offsetUnset()</code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="offsetGet" id="_offsetGet">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_offsetGet">#</a>
+		<code><a href="source-class-BN.Collections.ObjectArray.html#63-73" title="Go to source code">offsetGet</a>( <span>mixed <var>$offset</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$offset</var></dt>
+					<dd><code>mixed</code><br>$offset</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>Returns the value at specified offset or returns null if offset not exists.<br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code>ArrayAccess::offsetGet()</code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="offsetExists" id="_offsetExists">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_offsetExists">#</a>
+		<code><a href="source-class-BN.Collections.ObjectArray.html#75-82" title="Go to source code">offsetExists</a>( <span>mixed <var>$offset</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Whether or not an offset exists</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Whether or not an offset exists</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$offset</var></dt>
+					<dd><code>mixed</code><br>$offset</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code>ArrayAccess::offsetExists()</code></div>
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-BN.Collections.LinearDataStructure.html#methods">BN\Collections\LinearDataStructure</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-BN.Collections.LinearDataStructure.html#_checkIfElementIsNotNull">checkIfElementIsNotNull()</a>, 
+			<a href="class-BN.Collections.LinearDataStructure.html#_clear">clear()</a>, 
+			<a href="class-BN.Collections.LinearDataStructure.html#_isEmpty">isEmpty()</a>, 
+			<a href="class-BN.Collections.LinearDataStructure.html#_size">size()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-BN.Collections.LinearDataStructure.html#properties">BN\Collections\LinearDataStructure</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-BN.Collections.LinearDataStructure.html#$data"><var>$data</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		BN-PHP - Big Number data type for PHP API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>
