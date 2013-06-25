@@ -9,12 +9,12 @@
         <link href="assets/style.css" type="text/css" rel="stylesheet" />
         <!--[if lt IE 9]><script src="assets/html5.js"></script><![endif]-->
     </head>
-    <body itemscope itemtype="http://schema.org/Product">
+    <body itemscope itemtype="http://schema.org/WebApplication">
 
         <header>
             <h1>
                 <em itemprop="name">Treewec</em>
-                <span>The Latest Version: <strong>2.0</strong></span>
+                <span>The Latest Version: <strong itemprop="version">2.0</strong></span>
             </h1>
             <meta itemprop=URL content="http://zdenekdrahos.bitbucket.org/treewec/"/>
         </header>
@@ -23,7 +23,7 @@
 
             <section>
                 <h2>What is Treewec?</h2>
-                <p itemprop=description>Treewec is simple but powerful tool for creating and managing websites without database. This opensource PHP app can be used as CMS, editor for static websites, wiki software or web-based file manager. It's easy to use and it's completely customizable to all your demands.</p>
+                <p itemprop=description>Treewec is simple but powerful tool for creating and managing websites without database. This opensource PHP app can be used as CMS, editor for static websites, wiki software or web-based file manager. It's easy to use and it's completely customizable to all your demands. Requires <span itemprop="requirements">PHP >= 5.3</span></p>
                 <h3>How it works?</h3>
                 <ol>
                     <li>You choose (non-public) directory and set up basic web settings</li>
@@ -31,9 +31,8 @@
                 </ol>
             </section>
 
-            <section itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+            <section>
                 <h2>Why use Treewec?</h2>
-                <meta itemprop=price content="0" />
                 <ul>                    
                     <li>Easy to install and use.</li>
                     <li><strong>No database</strong> nor&nbsp;XML files.</li>
@@ -48,7 +47,7 @@
 
                     <figure>
                         <a href="images/screenshots/menu.png" class="fresco" data-fresco-group="screenshots">
-                            <img src="images/screenshots/thumbs/menu.png" width="120" height="74" alt="Menu & homepage" class="border" />
+                            <img itemprop="screenshot" src="images/screenshots/thumbs/menu.png" width="120" height="74" alt="Menu & homepage" class="border" />
                         </a>
                         <figcaption>Use side menu in admin area</figcaption>
                     </figure>
@@ -127,7 +126,7 @@
 
                 <ol>
                     <li>Check <a href="https://bitbucket.org/zdenekdrahos/treewec/wiki/" target="_blank">wiki</a></li>
-                    <li><a href="https://bitbucket.org/zdenekdrahos/treewec/downloads" target="_blank">Get the app</a> - download or clone Treewec</li>
+                    <li><a itemprop="downloadUrl" href="https://bitbucket.org/zdenekdrahos/treewec/downloads" target="_blank">Get the app</a> - download or clone Treewec</li>
                     <li>Set up the web & enjoy!</li>
                     <li><a href="https://bitbucket.org/zdenekdrahos/treewec/issues/new" target="_blank">Report</a> proposals, bugs&hellip;</li>
                 </ol>
@@ -137,7 +136,7 @@
             <footer>
                 <span><a href="https://bitbucket.org/zdenekdrahos/treewec/src/tip/license.txt" target="_blank">New BSD license</a></span>
                 <span>Source codes are available at <a href="https://bitbucket.org/zdenekdrahos/treewec" target="_blank">Bitbucket.org</a></span>
-                <span>Created by <a href="https://bitbucket.org/zdenekdrahos" target="_blank">Zdeněk Drahoš</a></span>
+                <span>Created by <a itemprop="author" href="https://bitbucket.org/zdenekdrahos" target="_blank">Zdeněk Drahoš</a></span>
             </footer>
 
         </article>
