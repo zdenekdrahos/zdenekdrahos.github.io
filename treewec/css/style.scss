@@ -1,0 +1,137 @@
+// colors
+$backgroundLight: #eee;
+$backgroundDark: #323;
+// fonts
+$fontSizeText: 17px;
+$fontSizeTreewec: 90px;
+$fontSizeVersion: 26px;
+
+body {
+    background: $backgroundLight;            
+    font-family: Arial, sans-serif;
+    font-size: $fontSizeText;
+    text-align: center;   
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+a {    
+    color: #606;
+    text-decoration: underline;
+}
+a:hover, a:focus {
+    background: #fff;
+    color: #909;
+}
+
+header {
+    min-width: 400px;
+    width: 100%;
+    height: 145px;
+    margin: 40px 0 0 0;
+    padding: 10px 0;
+    background: $backgroundDark;
+    border-top: 3px solid #111;
+    border-bottom: 3px solid #111;
+    h1 {
+        font-size: $fontSizeTreewec;
+        color: #fff;
+        margin: 0;
+        text-shadow: 2px 2px 0px #000;
+        em {
+            font-style: normal;
+        }
+        span {
+            display: block;
+            margin: 2px 0;
+            font-size: $fontSizeVersion;
+            font-weight: normal;
+            text-transform: uppercase;
+            color: #a98;
+            strong {
+                color: #e4060b
+            }
+        }    
+    }
+}
+
+article {
+    max-width: 750px;
+    width: 90%;
+    margin: 0 auto;         
+    line-height: 1.5em;
+    
+    section {
+        margin-top: 40px;
+        h2 {
+            background: #ddd;
+            line-height: 1.5em;
+            color: #606;
+            margin: 12px 0;
+            text-shadow: 1px 1px 1px #eee;
+        }
+        h3 {
+            font-size: 0.9em;
+            text-align: left;
+            margin: 0;
+        }
+        p {
+            text-align: justify;
+        }
+        ul {
+            list-style-type: square;
+        }
+        li {
+            text-align: left;
+        }
+        figure {
+            display: inline-block;
+            padding: 10px;
+            margin: 0;
+            position: relative;
+            a, a:hover, a:focus {
+                text-decoration: none; 
+            }
+            img {
+                border: 0;
+                max-width: 120px;
+                max-height: 100px;
+                vertical-align: middle;
+            }
+            figcaption {
+                display: none;
+            }
+        }
+        figure:hover, figure:focus {
+            background: #fff;
+            cursor: pointer;
+            figcaption {
+                display: block;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                font-size: 0.8em;
+                background: #fff;
+                padding: 3px 0;
+            }
+        }
+        .border {
+            border: 1px solid #ccc;
+        }
+    }
+    
+    footer {
+        font-size: 0.8em;
+        color: #a98;
+        padding: 6px 0;
+        a {
+            color: #a68;
+        }
+        span {
+            display: inline-block;
+            padding: 10px;
+        }
+    }
+    
+}

@@ -1,0 +1,128 @@
+body {
+  background: #eeeeee;
+  font-family: Arial, sans-serif;
+  font-size: 17px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+a {
+  color: #606;
+  text-decoration: underline;
+}
+
+a:hover, a:focus {
+  background: #fff;
+  color: #909;
+}
+
+header {
+  min-width: 400px;
+  width: 100%;
+  height: 145px;
+  margin: 40px 0 0 0;
+  padding: 10px 0;
+  background: #332233;
+  border-top: 3px solid #111;
+  border-bottom: 3px solid #111;
+}
+header h1 {
+  font-size: 90px;
+  color: #fff;
+  margin: 0;
+  text-shadow: 2px 2px 0px #000;
+}
+header h1 em {
+  font-style: normal;
+}
+header h1 span {
+  display: block;
+  margin: 2px 0;
+  font-size: 26px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #a98;
+}
+header h1 span strong {
+  color: #e4060b;
+}
+
+article {
+  max-width: 750px;
+  width: 90%;
+  margin: 0 auto;
+  line-height: 1.5em;
+}
+article section {
+  margin-top: 40px;
+}
+article section h2 {
+  background: #ddd;
+  line-height: 1.5em;
+  color: #606;
+  margin: 12px 0;
+  text-shadow: 1px 1px 1px #eee;
+}
+article section h3 {
+  font-size: 0.9em;
+  text-align: left;
+  margin: 0;
+}
+article section p {
+  text-align: justify;
+}
+article section ul {
+  list-style-type: square;
+}
+article section li {
+  text-align: left;
+}
+article section figure {
+  display: inline-block;
+  padding: 10px;
+  margin: 0;
+  position: relative;
+}
+article section figure a, article section figure a:hover, article section figure a:focus {
+  text-decoration: none;
+}
+article section figure img {
+  border: 0;
+  max-width: 120px;
+  max-height: 100px;
+  vertical-align: middle;
+}
+article section figure figcaption {
+  display: none;
+}
+article section figure:hover, article section figure:focus {
+  background: #fff;
+  cursor: pointer;
+}
+article section figure:hover figcaption, article section figure:focus figcaption {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  font-size: 0.8em;
+  background: #fff;
+  padding: 3px 0;
+}
+article section .border {
+  border: 1px solid #ccc;
+}
+article footer {
+  font-size: 0.8em;
+  color: #a98;
+  padding: 6px 0;
+}
+article footer a {
+  color: #a68;
+}
+article footer span {
+  display: inline-block;
+  padding: 10px;
+}
