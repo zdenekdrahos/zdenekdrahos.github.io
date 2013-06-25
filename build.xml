@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<project name="Compress, Concatenate, and FTP CSS and JS" default="initialize">
+    <target name="get_properties">
+        <property file="ant.properties" />
+    </target>
+    <target name="compress">
+        <java jar="D:/Programy/yui/bin/yui.jar" fork="true">
+            <arg value="${file}" />
+            <arg value="-o" />
+            <arg value="${file}" />
+        </java>
+    </target>
+    <target name="concat_css">
+        <concat destfile="${assets_dir}/style.css">
+            <filelist id="files" dir="${css_dir}">
+                <file name="colorbox.css" />
+                <file name="style.css" />
+            </filelist>
+        </concat>
+        <concat destfile="${assets_dir}/ie.css">
+            <filelist id="files" dir="${css_dir}">
+                <file name="ie.css" />
+            </filelist>
+        </concat>
+    </target>    
+    <target name="compress_css" depends="concat_css">
+        <antcall target="compress">
+            <param name="file" value="${assets_dir}/style.css" />
+        </antcall>
+        <antcall target="compress">
+            <param name="file" value="${assets_dir}/ie.css" />
+        </antcall>
+    </target>    
+    <target name="concat_js">
+        <concat destfile="${assets_dir}/script.js">
+            <filelist id="files" dir="${js_dir}">
+                <file name="jquery-1.9.1.min.js" />
+                <file name="jquery.colorbox-min.js" />
+                <file name="document-ready.js" />
+            </filelist>
+        </concat>
+    </target>    
+    <target name="compress_js" depends="concat_js">
+        <antcall target="compress">
+            <param name="file" value="${assets_dir}/script.js" />
+        </antcall>
+    </target>
+    <target name="clean_up" depends="get_properties">
+        <delete file="${assets_dir}/style.css" />
+        <delete file="${assets_dir}/script.js" />
+    </target>    
+    <target name="initialize" depends="get_properties,clean_up">
+        <mkdir dir="${assets_dir}" />
+        <antcall target="compress_css" />
+        <antcall target="compress_js"  />
+    </target>  
+</project>

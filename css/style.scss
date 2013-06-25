@@ -1,0 +1,200 @@
+// colors
+$background: #fff;
+$backgroundDark: #000;
+$backgroundLight: #eee;
+
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    background: $background;
+    text-align: left;
+}
+
+header h1, #content {
+    min-width: 380px;
+    max-width: 960px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {    
+    color: #006;
+    text-decoration: underline;
+}
+a:hover, a:focus {
+    background: #eee;
+    color: #00c;
+}
+
+header {
+    background: $backgroundDark;
+    
+    h1 {
+        color: #ddd;
+        font-size: 50px;
+        padding: 20px;
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+        a:hover, a:focus {
+            color: #fff;
+            background: transparent;
+            text-decoration: underline;
+        }
+        em {
+            font-size: 20px;
+            display: block;
+        }
+    }
+}
+
+#content {    
+    
+    h2 {
+        font-size: 25px;
+        padding: 4px;
+        background: $backgroundDark;
+        color: #fff;
+    }
+    
+    p, li {
+        line-height: 1.6em;
+    }
+    
+    li {
+        list-style-type: square;
+    }
+    
+    article {
+        padding: 10px 0;
+        clear: both;
+        section {
+            clear: both;
+            header {
+                background: transparent;
+                line-height: 2em;
+                h3 {
+                    color: #003;
+                    font-size: 22px;
+                    margin: 0;
+                    padding: 0;
+                }
+                strong {
+                    display: block;
+                    font-weight: normal;
+                    font-style: italic;
+                    a {
+                        font-style: normal;
+                    }
+                }
+                .tags {
+                    margin: 0;
+                    padding: 6px 0;
+                    li {
+                        margin: 0 4px 4px 0;
+                        display: inline-block;
+                        padding: 5px;
+                        background: #eee;
+                        border: 1px solid #ccc;
+                    }
+                }
+            }
+            p {
+                margin: 0 0 1em;
+                text-align: justify;
+            }
+        }
+    }
+    
+    figure {
+        float: right;
+        margin: 0 0 20px 20px !important;
+        padding: 5px;
+        a {
+            display: block;
+            border: 0;
+            padding: 3px;
+            background: #eee;
+            border: 1px solid #ccc;
+            text-decoration: none;
+            img {
+                display: block;
+                margin: 0 auto;
+                text-align: center;
+                vertical-align: middle;
+                border: 1px solid #ccc;
+            }
+        }
+        a:hover, a:focus {
+            background: #fff;
+            border: 1px solid #000;
+        }
+    }
+    figure .gallery, figure figcaption {
+        display: none;
+    }
+    
+    article#webdesign {
+        figure {
+            float: left;
+            margin-left: 0 !important;
+            margin-right: 10px !important;            
+            figcaption {
+                display: block;
+                text-align: center;
+                font-size: 0.8em;
+                padding-top: 3px;
+                a {
+                    background: transparent;
+                    border: 0;
+                }
+                a:hover, a:focus {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    
+    .links {
+        li {
+            padding-bottom: 6px;
+            a {
+                display: block;
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 800px) {
+    #content {
+        article {
+            section {
+                figure {
+                    float: left;
+                    margin: 0 7px 0 0 !important;
+                    img {
+                        width: 50px !important;
+                        height: 50px !important;
+                    }
+                }
+                header {
+                    h3 {
+                        font-size: 20px;
+                        line-height: 60px;
+                    }
+                    strong {
+                        clear: both;
+                        font-size: 0.9em;
+                        line-height: 1.5em;
+                    }
+                }
+            }
+        }
+    }
+}

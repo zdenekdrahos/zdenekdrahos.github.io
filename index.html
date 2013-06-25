@@ -3,16 +3,232 @@
     <head>  
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width" />
-        <title>Zdeněk Drahoš</title>
-        <meta name="author" content="Zdenek Drahos" />
+        <title>Zdeněk Drahoš - a software developer from the Czech Republic</title>        
+        <meta name="description" content="Portfolio of a software web developer Zdeněk Drahoš from Makov, the Czech Republic. Summary of projects like Sports Table Manager, Treewec, BN-PHP, ...">
+        <meta name="keywords" content="zdenek, drahos, software, web, developer">
+        <link href="assets/style.css" type="text/css" rel="stylesheet" />
+        <!--[if lt IE 9]><script src="assets/html5.js"></script><![endif]-->
+        <!--[if lt IE 8]><link href="assets/ie.css" type="text/css" rel="stylesheet" /><![endif]-->
     </head>
-    <body>
-        
-        <h1><a href="https://bitbucket.org/zdenekdrahos">Zdeněk Drahoš</a> – a software developer from Makov, the Czech Republic</h1>
-        
-        <ul>
-            <li><a href="./bn-php/namespace-BN.html">BN-PHP API Documentation</a></li>
-        </ul> 
-        
+    <body itemscope itemtype="http://schema.org/Person">
+
+        <header>
+            <h1>
+                <a href="https://bitbucket.org/zdenekdrahos" itemprop="url">
+                    <span itemprop="name">Zdeněk Drahoš</span>
+                </a>
+                <em>
+                    a <span itemprop="jobTitle">software developer</span> from 
+                    <span itemprop=address itemscope itemtype="http://www.schema.org/PostalAddress">
+                        <span itemprop=addressLocality>Makov</span>, the Czech Republic
+                        <meta itemprop=addressCountry content=CZ />
+                    </span>
+                </em>
+            </h1>
+        </header>
+
+        <div id="content">
+
+            <nav>
+                <h2>Projects summary</h2>
+                <ul>
+                    <li>
+                        <a href="#php">PHP projects</a>
+                        <ul>
+                            <li><a href="#stm">Sports Table Manager</a> – manage results of sport clubs</li>
+                            <li><a href="#treewec">Treewec</a> – create and manage websites</li>
+                            <li><a href="#sport-schedules">Sport Schedules</a> – generating round-robin, playoff, tournaments</li>
+                            <li><a href="#bn-php">BN-PHP</a> – use big numbers in PHP</li>
+                        </ul>
+                    </li>  
+                    <li><a href="#webdesign">Webdesign, website administrator</a></li>
+                    <li><a href="#upce">School projects at University of Pardubice</a></li>    
+                    <li><a href="#smaller-projects">Other smaller projects</a></li>
+                </ul>
+            </nav>
+
+            <article id="php">
+                <h2>PHP Projects</h2>
+
+                <section id="stm" itemscope itemtype="http://schema.org/WebApplication">
+                    <figure>
+                        <a href="images/portfolio/stm/app-homepage.png" title="Homepage in STM application" class="gallery-stm">
+                            <img itemprop="image" src="images/portfolio/stm/_image.png" alt="STM" width=250 height=200 />
+                        </a>
+                        <div class="gallery">
+                            <a href="images/portfolio/stm/competition-playoff.png" title="Playoff competition" class="gallery-stm">&nbsp;</a>
+                            <a href="images/portfolio/stm/competition-season.png" title="Season table" class="gallery-stm">&nbsp;</a>
+                            <a href="images/portfolio/stm/groups.png" title="User groups permissions" class="gallery-stm">&nbsp;</a>
+                            <a href="images/portfolio/stm/statistics.png" title="Statistics" class="gallery-stm">&nbsp;</a>
+                            <a href="images/portfolio/stm/install.png" title="Installation" class="gallery-stm">&nbsp;</a>
+                        </div>
+                        <figcaption>STM screenshots</figcaption>
+                    </figure>
+                    <header>
+                        <h3 itemprop="name">Sports Table Manager</h3>
+                        <strong>Homepage: <a href="http://www.sports-table-manager.php5.cz" itemprop="url" target="_blank">www.sports-table-manager.php5.cz</a></strong>
+                        <ul class="tags">
+                            <li>PHP</li>
+                            <li>MySQL</li>
+                            <li>Oracle</li>
+                            <li>OOP</li>
+                            <li>MVC</li>
+                            <li>Cache</li>
+                            <li>GNU GPL 3</li>
+                        </ul>
+                    </header>
+                    <p itemprop="description">PHP MySQL/Oracle web-based application, which is intended to manage results of sport clubs. STM offers easy management of teams, clubs, competitions and matches. It supports various sports, match predictions, statistics, charts, integration on your web&hellip; STM was developed as part of my bachelor thesis.</p>                    
+                </section>
+
+                <section id="treewec" itemscope itemtype="http://schema.org/WebApplication">
+                    <figure>
+                        <a href="treewec/images/screenshots/pages.png" title="View all pages" class="gallery-treewec">
+                            <img itemprop="image" src="images/portfolio/treewec/_image.png" alt="Treewec" width=250 height=200 />
+                        </a>
+                        <div class="gallery">
+                            <a href="treewec/images/screenshots/menu.png" title="Use side menu in admin area" class="gallery-treewec">&nbsp;</a>
+                            <a href="treewec/images/screenshots/check-system.png" title="Check if your system is ready" class="gallery-treewec">&nbsp;</a>
+                            <a href="treewec/images/screenshots/settings.png" title="Set up Treewec" class="gallery-treewec">&nbsp;</a>
+                            <a href="treewec/images/screenshots/edit-page.png" title="Edit page in content editable mode" class="gallery-treewec">&nbsp;</a>
+                        </div>
+                        <figcaption>Treewec screenshots</figcaption>
+                    </figure>
+                    <header>
+                        <h3 itemprop="name">Treewec</h3>
+                        <strong>Homepage: <a href="treewec/" itemprop="url" target="_blank">zdenekdrahos.bitbucket.org/treewec/</a></strong>
+                        <ul class="tags">
+                            <li>PHP</li>
+                            <li>OOP</li>
+                            <li>KISS</li>
+                            <li>UTF-8</li>
+                            <li>Apache URL rewrite</li>
+                            <li>New BSD</li>
+                        </ul>
+                    </header>
+                    <p itemprop="description">Treewec is simple but powerful tool for creating and managing websites without database. This opensource PHP app can be used as CMS, editor for static websites, wiki software or web-based file manager. It's easy to use and it's completely customizable to all your demands.</p>                    
+                </section>
+                
+                <section id="sport-schedules" itemscope itemtype="http://schema.org/WebApplication">
+                    <figure>
+                        <a href="images/portfolio/sport-schedules/website.png" title="Homepage of czech online app for generating sport schedules" class="gallery-sport-schedules">
+                            <img itemprop="image" src="images/portfolio/sport-schedules/_image.png" alt="Sport Schedules generator" width=250 height=200 />
+                        </a>
+                        <div class="gallery">
+                            <a href="images/portfolio/sport-schedules/round-robin.jpg" title="Round robin schedule" class="gallery-sport-schedules">&nbsp;</a>
+                            <a href="images/portfolio/sport-schedules/playoff.jpg" title="Playoff schedule" class="gallery-sport-schedules">&nbsp;</a>
+                            <a href="images/portfolio/sport-schedules/cross-table.jpg" title="Cross table" class="gallery-sport-schedules">&nbsp;</a>
+                        </div>
+                        <figcaption>Generator of Sports Schedules screenshots</figcaption>
+                    </figure>
+                    <header>
+                        <h3 itemprop="name">Generator of Sports Schedules</h3>
+                        <strong>Homepage: <a href="https://bitbucket.org/sports-scheduler" itemprop="url" target="_blank">bitbucket.org/sports-scheduler</a></strong>
+                        <ul class="tags">
+                            <li>PHP</li>
+                            <li>OOP</li>
+                            <li>mPDF</li>
+                            <li>CSV</li>
+                            <li>HTML</li>
+                            <li>GNU GPL 3</li>
+                        </ul>
+                    </header>
+                    <p itemprop="description">Collections of classes for generating season schedule (round robin system), playoff (single-elimination), tournaments (round-robin for each group and playoff afterwards) and cross tables. Classes are used at <a href="http://www.online-generator-rozpisu.g6.cz/" target="_blank">czech online app</a> for generating sport schedules, where users can export generated schedules to PDF, CSV or HTML.</p>                    
+                </section>
+
+                <section id="bn-php" itemscope itemtype="http://schema.org/SoftwareApplication">
+                    <figure>
+                        <a href="images/portfolio/bn-php/logo.jpg" title="BN-PHP logo" class="gallery-bn-php">
+                            <img itemprop="image" src="images/portfolio/bn-php/_image.jpg" alt="BN-PHP" width=250 height=200 />
+                        </a>
+                        <figcaption>BN-PHP screenshots</figcaption>
+                    </figure>
+                    <header>
+                        <h3 itemprop="name">BN-PHP</h3>
+                        <strong>Homepage: <a href="https://bitbucket.org/zdenekdrahos/bn-php" itemprop="url" target="_blank">bitbucket.org/zdenekdrahos/bn-php</a></strong>
+                        <ul class="tags">
+                            <li>PHP</li>
+                            <li>OOP</li>
+                            <li>BC Math</li>
+                            <li>Shunting Yard</li>
+                            <li>Infix/Postfix notation</li>
+                            <li>New BSD</li>
+                        </ul>
+                    </header>
+                    <p itemprop="description">Big Number data type which can be used as replacement of inaccurate float. Now you don't have to worry about floating point precision problem. It use BC Math library for basic immutable Number but it also contains expression evaluator with implemented Shunting Yard algorithm and Postfix algorithm.</p>                    
+                </section>
+
+            </article>
+            
+            <article id="webdesign">
+                <h2>Webdesign & website administrator</h2>
+
+                <figure>
+                    <a href="images/portfolio/webdesign/jindrich-jana.jpg" title="Stonemason Jindřich Jána" class="gallery-webdesign">
+                        <img src="images/portfolio/webdesign/thumbs/jindrich-jana.jpg" alt="Stonemason Jindřich Jána" width=150 height=150 />
+                    </a>
+                    <figcaption><a href="http://www.jindrich-jana.cz" target="_blank">Stonemason Jindřich Jána</a></figcaption>
+                </figure>
+
+                <figure>
+                    <a href="images/portfolio/webdesign/lamb-of-god-v3.jpg" title="Lamb of God fansite - current design" class="gallery-webdesign">
+                        <img src="images/portfolio/webdesign/thumbs/lamb-of-god.jpg" alt="Lamb of God fansite" width=150 height=150 />
+                    </a>
+                    <div class="gallery">
+                        <a href="images/portfolio/webdesign/lamb-of-god-v2.jpg" title="Lamb of God fansite - previous design" class="gallery-webdesign">&nbsp;</a>
+                    </div>
+                    <figcaption><a href="http://www.lambofgod.4fan.cz" target="_blank">Lamb of God fansite</a></figcaption>
+                </figure>
+
+                <figure>
+                    <a href="images/portfolio/webdesign/morasice-v3.jpg" title="Football team Morašice - current design" class="gallery-webdesign">
+                        <img src="images/portfolio/webdesign/thumbs/morasice.jpg" alt="Football team Morašice" width=150 height=150 />
+                    </a>
+                    <div class="gallery">
+                        <a href="images/portfolio/webdesign/morasice-v2.jpg" title="Football team Morašice - previous design" class="gallery-webdesign">&nbsp;</a>
+                    </div>
+                    <figcaption><a href="http://www.sokolmorasice.g6.cz" target="_blank">Football team Morašice</a></figcaption>
+                </figure>
+
+                <figure>
+                    <a href="images/portfolio/webdesign/confidance.jpg" title="Melodic death metal band Confidance" class="gallery-webdesign">
+                        <img src="images/portfolio/webdesign/thumbs/confidance.jpg" alt="Confidance" width=150 height=150 />
+                    </a>
+                    <figcaption><a href="http://www.confidance.eu" target="_blank">Metal band Confidance</a></figcaption>
+                </figure>
+
+                <figure>
+                    <a href="images/portfolio/webdesign/kplus.jpg" title="Kplus & NewAtlas - Kplus company" class="gallery-webdesign">
+                        <img src="images/portfolio/webdesign/thumbs/kplus.jpg" alt="Kplus, NewAtlas" width=150 height=150 />
+                    </a>
+                    <div class="gallery">
+                        <a href="images/portfolio/webdesign/newatlas.jpg" title="Kplus & NewAtlas - NewAtlas company" class="gallery-webdesign">&nbsp;</a>
+                    </div>
+                    <figcaption><a href="http://www.kplus.cz" target="_blank">Kplus & NewAtlas companies</a></figcaption>
+                </figure>
+
+            </article>
+
+            <article id="upce">
+                <h2>School projects at University of Pardubice</h2>
+                <ul class="links">
+                    <li><a href="https://bitbucket.org/zdenekdrahos/c-generic-data-structures-algorithms" target="_blank">C# Generic Data Structures & Algorithms</a> Graph, Shortest path, Tables, Pairing heap, Binary search tree, Range trees, Red Black tree, Block Files, Search algorithms.</li>         
+                    <li><a href="https://bitbucket.org/zdenekdrahos/java-neural-networks" target="_blank">JAVA Neural Networks</a> Kohonen map (SOM), feedforward neural network, Back Propagation training algorithm.</li>         
+                    <li><a href="https://bitbucket.org/sports-scheduler/aplikace-pro-generov-n-rozpis-cs" target="_blank">JAVA Sport Scheduler & Managers</a> App for generating and managing schedules which are stored in XML and can be exported to HTML.</li>         
+                </ul>
+            </article>
+
+            <article id="smaller-projects">
+                <h2>Other smaller projects</h2>
+                <ul class="links">
+                    <li><a href="https://bitbucket.org/zdenekdrahos/php-language-switch-class" target="_blank">PHP Language Switch class</a> Simple PHP class to switch languages on websites.</li>         
+                    <li><a href="https://bitbucket.org/zdenekdrahos/php-logger-class" target="_blank">PHP Logger class</a> Simple PHP class for logging events.</li>         
+                    <li><a href="https://bitbucket.org/zdenekdrahos/php-file-cache" target="_blank">PHP File Cache</a> PHP Tool for caching in the files.</li>         
+                    <li><a href="https://bitbucket.org/zdenekdrahos/php-wordpress-theme-default-structure" target="_blank">PHP Wordpress Theme</a> Default structure for new WP theme.</li>
+                </ul>
+            </article>
+
+        </div>
+
+        <script src="assets/script.js"></script>        
     </body>
 </html>
