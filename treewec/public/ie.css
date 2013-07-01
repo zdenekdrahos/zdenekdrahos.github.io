@@ -1,0 +1,15 @@
+/*** Navigation in file module */
+div#content nav ul li {
+    display: inline !important;
+    margin: 0 1ex 1ex 0;
+    font-size: 0.9em
+}
+div#content nav ul li a {    
+    background: #fff;
+    border: 1px solid #557 !important;
+}
+div#content nav ul li a.selected, div#content nav ul li a:hover {
+    background: #557;
+    color: #fff;
+    border: 1px solid #111;
+}

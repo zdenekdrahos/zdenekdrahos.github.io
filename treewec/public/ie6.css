@@ -1,0 +1,205 @@
+
+/* MAIN STRUCTURE */
+body div#treewec {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #323;
+    width: auto;
+    padding: 1% 10px;
+    height: auto;
+    border-right: 0;
+    color: #ddc;
+    text-align: center;
+}
+body div#content {
+    margin: 1em 1em 1em 40px;
+    max-width: 900px;
+    width: 80%;
+    line-height: 1.3em;
+}
+body figure {        
+    border-bottom: 1px solid #111;    
+    padding: 1ex 0 1ex 40px;
+}
+
+/* MESSAGE SECTION - succes, failure session messages */
+body figure span {
+    display: block;    
+    color: #fff;
+}
+body figure.hidden {    
+    display: hidden;
+    border: 0;
+}
+body figure.success {    
+    background: #3c0;
+}
+body figure.failure {
+    background: #f00;    
+}
+
+/* TREEWEC MENU */
+div#treewec nav {
+    display: block;
+}
+div#treewec figure {
+    display: none;
+}
+div#treewec ul li {    
+    display: inline !important;
+    margin-right: 1em;
+}
+/** Figure */
+div#treewec figure {
+    text-align: center;
+    text-transform: uppercase;
+}
+/** Navigation */
+body div#treewec nav {    
+    line-height: 1.5em;
+}
+div#treewec nav strong, div#treewec nav em {  
+    display: block;    
+}
+div#treewec nav strong:first-child {
+    margin: 0;
+    color: #fff;    
+    font-weight: 700;
+    font-size: 1.6em;
+}
+div#treewec nav strong {    
+    color: #a98;
+    font-size: 1.2em;    
+    margin: 1em 0 0 0;
+}
+div#treewec nav em {    
+    text-transform: uppercase;
+    color: #a98;
+    font-size: 0.9em;
+}
+div#treewec nav em span{    
+    color: #c00;
+    font-weight: 700;
+}
+div#treewec nav a {    
+    font-weight: 700;
+    color: #ddc
+}
+div#treewec nav a:hover, div#treewec nav a:focus {    
+    color: #606;
+    background: #ddc;
+}
+/** Languages */
+div#treewec nav ul.language-chooser li {    
+    font-weight: 700;
+}
+div#treewec nav ul.language-chooser li a {        
+    font-weight: 300;
+    opacity: 0.6;
+}
+div#treewec nav ul.language-chooser li a:hover {
+    opacity: 1;
+}
+
+
+/* MAIN CONTENT */
+/** Lists */
+div#content ul, div#content ol {
+    margin: 1ex;
+    color: #a98;
+    line-height: 1.5em;
+}
+div#content ul li {
+    list-style-type: square;
+}
+div#content ol li {
+    list-style-type: decimal;
+}
+div#content ul li img, div#content ol li img {
+    vertical-align: middle;
+}
+div#content ul li span, div#content ol li span {
+    color: #000;
+}
+div#content ul.content, div#content table.form ul, div#content form ul {    
+    margin: 0 1ex;
+}
+div#content ul.content a {
+    color: #a98;
+}
+/*** Navigation in file module */
+div#content nav ul li {
+    display: inline-block;
+    margin: 0 1ex 1ex 0;
+    font-size: 0.9em
+}
+div#content nav ul li a {
+    display: inline;
+    padding: 0.5ex 1ex;
+    background: #fff;
+    border: 1px solid #557;
+    border-radius: 5px;
+}
+div#content nav ul li a.selected, div#content nav ul li a:hover {
+    background: #557;
+    color: #fff;
+    border-color: #111;
+}
+/*** Form errors */
+div#content aside.errors h2, div#content aside.errors ul li {
+    color: #c00;
+    margin: 0;
+    text-transform: none;
+}
+div#content aside.errors ul li span {    
+    color: #111;
+}
+/** Toogle divs */
+div#content div.toogle  {
+    display:none;
+}
+div#content div#displayed {
+    display:block;
+}
+div#content table.order ul li {
+    list-style-type: none;
+    width: 94%;
+    margin: 1ex 0 1ex 3%;
+    border: 1px solid #557;
+    color: #fff;
+    padding: 3px 0;
+}
+div#content table.order ul li:hover {
+    cursor: pointer;
+}
+
+/* Forms */
+div#content form fieldset legend {
+    color: #ccc;    
+    text-transform: uppercase;
+    font-size: 0.8em;
+    padding: 0 1ex;
+}
+/** Editing files and folders */
+body div#content textarea {
+    width: 97%;
+    border: 1px solid #ddc;
+    box-shadow: #ddd 2px 2px 2px;    
+    overflow: auto;
+    padding: 1%;
+    min-height: 500px;
+}
+/** Code */
+body div#content code {
+    display: block;
+    overflow: auto;
+    margin: 1em;
+    padding: 1ex;
+    background: #fff;
+    border: 1px dotted #a98;    
+    font-size: 0.9em;
+    font-family: "Courier New", Courier, monospace;
+    color: #000;
+    white-space: pre;    
+}

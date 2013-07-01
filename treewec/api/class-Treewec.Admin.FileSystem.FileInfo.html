@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class Treewec\Admin\FileSystem\FileInfo | Treewec</title>
+
+	<script type="text/javascript" src="resources/combined.js?670845959"></script>
+	<script type="text/javascript" src="elementlist.js?382615756"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li class="active"><a href="namespace-Treewec.html">Treewec<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-Treewec.Admin.html">Admin<span></span></a>
+						<ul>
+				<li><a href="namespace-Treewec.Admin.Authentication.html">Authentication</a>
+						</li>
+				<li><a href="namespace-Treewec.Admin.Editors.html">Editors</a>
+						</li>
+				<li class="active"><a href="namespace-Treewec.Admin.FileSystem.html">FileSystem</a>
+						</li>
+				<li><a href="namespace-Treewec.Admin.Forms.html">Forms</a>
+						</li>
+				<li><a href="namespace-Treewec.Admin.Helpers.html">Helpers</a>
+						</li>
+				<li><a href="namespace-Treewec.Admin.HTML.html">HTML</a>
+						</li>
+				<li><a href="namespace-Treewec.Admin.Libs.html">Libs</a>
+						</li>
+				<li><a href="namespace-Treewec.Admin.Logger.html">Logger</a>
+						</li>
+				<li><a href="namespace-Treewec.Admin.Module.html">Module<span></span></a>
+						<ul>
+				<li><a href="namespace-Treewec.Admin.Module.Audit.html">Audit</a>
+						</li>
+				<li><a href="namespace-Treewec.Admin.Module.Auth.html">Auth</a>
+						</li>
+				<li><a href="namespace-Treewec.Admin.Module.File.html">File</a>
+						</li>
+				<li><a href="namespace-Treewec.Admin.Module.Help.html">Help</a>
+						</li>
+				<li><a href="namespace-Treewec.Admin.Module.Home.html">Home</a>
+						</li>
+				<li><a href="namespace-Treewec.Admin.Module.Pages.html">Pages</a>
+						</li>
+				<li><a href="namespace-Treewec.Admin.Module.Settings.html">Settings</a>
+						</li>
+				<li><a href="namespace-Treewec.Admin.Module.Themes.html">Themes</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Treewec.Admin.Mvc.html">Mvc</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Treewec.Autoload.html">Autoload</a>
+						</li>
+				<li><a href="namespace-Treewec.Collections.html">Collections</a>
+						</li>
+				<li><a href="namespace-Treewec.Exceptions.html">Exceptions</a>
+						</li>
+				<li><a href="namespace-Treewec.FileSystem.html">FileSystem<span></span></a>
+						<ul>
+				<li><a href="namespace-Treewec.FileSystem.Helpers.html">Helpers</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Treewec.Holders.html">Holders</a>
+						</li>
+				<li><a href="namespace-Treewec.HTML.html">HTML</a>
+						</li>
+				<li><a href="namespace-Treewec.Iterators.html">Iterators<span></span></a>
+						<ul>
+				<li><a href="namespace-Treewec.Iterators.Directory.html">Directory<span></span></a>
+						<ul>
+				<li><a href="namespace-Treewec.Iterators.Directory.Abort.html">Abort</a>
+						</li>
+				<li><a href="namespace-Treewec.Iterators.Directory.Filter.html">Filter</a>
+						</li>
+				<li><a href="namespace-Treewec.Iterators.Directory.Order.html">Order<span></span></a>
+						<ul>
+				<li><a href="namespace-Treewec.Iterators.Directory.Order.Comparator.html">Comparator</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Treewec.Iterators.Process.html">Process</a>
+						</li>
+				<li><a href="namespace-Treewec.Iterators.Processors.html">Processors<span></span></a>
+						<ul>
+				<li><a href="namespace-Treewec.Iterators.Processors.Files.html">Files</a>
+						</li>
+				<li><a href="namespace-Treewec.Iterators.Processors.Lists.html">Lists</a>
+						</li>
+				<li><a href="namespace-Treewec.Iterators.Processors.Tables.html">Tables</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Treewec.Lang.html">Lang</a>
+						</li>
+				<li><a href="namespace-Treewec.Libs.html">Libs</a>
+						</li>
+				<li><a href="namespace-Treewec.Mvc.html">Mvc</a>
+						</li>
+				<li><a href="namespace-Treewec.Output.html">Output</a>
+						</li>
+				<li><a href="namespace-Treewec.Page.html">Page</a>
+						</li>
+				<li><a href="namespace-Treewec.Theme.html">Theme</a>
+						</li>
+				<li><a href="namespace-Treewec.Url.html">Url</a>
+						</li>
+				<li><a href="namespace-Treewec.Utils.html">Utils</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-TreewecAuth.html">TreewecAuth</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Treewec.Admin.FileSystem.DirectoryOrderChecker.html">DirectoryOrderChecker</a></li>
+				<li><a href="class-Treewec.Admin.FileSystem.FileCounter.html">FileCounter</a></li>
+				<li><a href="class-Treewec.Admin.FileSystem.FileIcon.html">FileIcon</a></li>
+				<li class="active"><a href="class-Treewec.Admin.FileSystem.FileInfo.html">FileInfo</a></li>
+				<li><a href="class-Treewec.Admin.FileSystem.FilenameNormalization.html">FilenameNormalization</a></li>
+				<li><a href="class-Treewec.Admin.FileSystem.FileSizeCounter.html">FileSizeCounter</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Treewec.Admin.FileSystem.html" title="Summary of Treewec\Admin\FileSystem"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class FileInfo</h1>
+
+
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		<b>Final</b><br />
+		
+		<b>Namespace:</b> <a href="namespace-Treewec.html">Treewec</a>\<a href="namespace-Treewec.Admin.html">Admin</a>\<a href="namespace-Treewec.Admin.FileSystem.html">FileSystem</a><br />
+		
+
+		<b>Located at</b> <a href="source-class-Treewec.Admin.FileSystem.FileInfo.html#10-96" title="Go to source code">treewec/admin/Admin/FileSystem/FileInfo.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="getFromPath" id="_getFromPath">
+
+		<td class="attributes"><code>
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getFromPath">#</a>
+		<code><a href="source-class-Treewec.Admin.FileSystem.FileInfo.html#25-31" title="Go to source code">getFromPath</a>( <span>string <var>$path</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$path</var></dt>
+					<dd><code>string</code><br>$path</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getFromSplFileInfo" id="_getFromSplFileInfo">
+
+		<td class="attributes"><code>
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getFromSplFileInfo">#</a>
+		<code><a href="source-class-Treewec.Admin.FileSystem.FileInfo.html#33-36" title="Go to source code">getFromSplFileInfo</a>( <span><code><a href="class-SplFileInfo.html">SplFileInfo</a></code> <var>$splFileInfo</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$splFileInfo</var></dt>
+					<dd><code><code><a href="class-SplFileInfo.html">SplFileInfo</a></code></code><br>$splFileInfo</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="loadFolderContentSize" id="_loadFolderContentSize">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_loadFolderContentSize">#</a>
+		<code><a href="source-class-Treewec.Admin.FileSystem.FileInfo.html#50-57" title="Go to source code">loadFolderContentSize</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="printTree" id="_printTree">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_printTree">#</a>
+		<code><a href="source-class-Treewec.Admin.FileSystem.FileInfo.html#59-61" title="Go to source code">printTree</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="name" id="$name">
+		<td class="attributes"><code>
+			public  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Treewec.Admin.FileSystem.FileInfo.html#13" title="Go to source code"><var>$name</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$name" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="path" id="$path">
+		<td class="attributes"><code>
+			public  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Treewec.Admin.FileSystem.FileInfo.html#14" title="Go to source code"><var>$path</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$path" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="type" id="$type">
+		<td class="attributes"><code>
+			public  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Treewec.Admin.FileSystem.FileInfo.html#15" title="Go to source code"><var>$type</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$type" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="size" id="$size">
+		<td class="attributes"><code>
+			public  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Treewec.Admin.FileSystem.FileInfo.html#16" title="Go to source code"><var>$size</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$size" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="dateModification" id="$dateModification">
+		<td class="attributes"><code>
+			public  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Treewec.Admin.FileSystem.FileInfo.html#17" title="Go to source code"><var>$dateModification</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$dateModification" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="dateCreation" id="$dateCreation">
+		<td class="attributes"><code>
+			public  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Treewec.Admin.FileSystem.FileInfo.html#18" title="Go to source code"><var>$dateCreation</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$dateCreation" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="visibility" id="$visibility">
+		<td class="attributes"><code>
+			public  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Treewec.Admin.FileSystem.FileInfo.html#19" title="Go to source code"><var>$visibility</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$visibility" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		Treewec API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>
