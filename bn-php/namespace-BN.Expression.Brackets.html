@@ -4,7 +4,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="generator" content="ApiGen 2.8.0" />
 
-	<title>Namespace BN | BN-PHP - Big Number data type for PHP</title>
+	<title>Namespace BN\Expression\Brackets | BN-PHP - Big Number data type for PHP</title>
 
 	<script type="text/javascript" src="resources/combined.js?670845959"></script>
 	<script type="text/javascript" src="elementlist.js?3909941127"></script>
@@ -25,9 +25,9 @@
 						<ul>
 				<li><a href="namespace-BN.Collections.html">Collections</a>
 						</li>
-				<li><a href="namespace-BN.Expression.html">Expression<span></span></a>
+				<li class="active"><a href="namespace-BN.Expression.html">Expression<span></span></a>
 						<ul>
-				<li><a href="namespace-BN.Expression.Brackets.html">Brackets</a>
+				<li class="active"><a href="namespace-BN.Expression.Brackets.html">Brackets</a>
 						</li>
 				<li><a href="namespace-BN.Expression.Exception.html">Exception</a>
 						</li>
@@ -47,14 +47,12 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
-				<li><a href="class-BN.Number.html">Number</a></li>
-				<li><a href="class-BN.NumberFactory.html">NumberFactory</a></li>
-				<li><a href="class-BN.Rounding.html">Rounding</a></li>
+				<li><a href="class-BN.Expression.Brackets.Brackets.html">Brackets</a></li>
 			</ul>
 
 			<h3>Interfaces</h3>
 			<ul>
-				<li><a href="class-BN.INumber.html">INumber</a></li>
+				<li><a href="class-BN.Expression.Brackets.IBrackets.html">IBrackets</a></li>
 			</ul>
 
 
@@ -95,50 +93,27 @@
 	</div>
 
 <div id="content" class="namespace">
-	<h1>Namespace BN</h1>
+	<h1>Namespace <a href="namespace-BN.html">BN</a>\<a href="namespace-BN.Expression.html">Expression</a>\Brackets</h1>
 
-	<table class="summary" id="namespaces">
-	<caption>Namespaces summary</caption>
-	<tr>
-		<td class="name"><a href="namespace-BN.Collections.html">BN\Collections</a></td>
-	</tr>
-	<tr>
-		<td class="name"><a href="namespace-BN.Expression.html">BN\Expression</a></td>
-	</tr>
-	</table>
 
 
 <table class="summary" id="classes">
 <caption>Classes summary</caption>
 <tr>
-	<td class="name"><a href="class-BN.Number.html">Number</a></td>
-	<td>Big Number data type for PHP. Uses BC Math for arbitrary precision mathematics
-with numbers of any size and precision. Object is immutable and the inner
-representation of number is a string.
-<!-- by Texy2! --></td>
-</tr>
-<tr>
-	<td class="name"><a href="class-BN.NumberFactory.html">NumberFactory</a></td>
-	<td>Factory for creating @see Number from string, integer, float or object. Useful
-for creating numbers from different types because Number throws
-\InvalidArgumentException if argument in constructor is not string. It can also
-create numbers for mathematical constants pi and e.</td>
-</tr>
-<tr>
-	<td class="name"><a href="class-BN.Rounding.html">Rounding</a></td>
-	<td>Helper class for rounding @see INumber. It's analogue of callback. Useful for
-rounding more than one number with same round rules.</td>
+	<td class="name"><a href="class-BN.Expression.Brackets.Brackets.html">Brackets</a></td>
+	<td>Implementation of brackets used in mathematical expressions. Left and right
+brackets are saved as two different strings.</td>
 </tr>
 </table>
 
 <table class="summary" id="interfaces">
 <caption>Interfaces summary</caption>
 <tr>
-	<td class="name"><a href="class-BN.INumber.html">INumber</a></td>
-	<td>Interface for number which is used in expression evaluator. Variables can be
-used in evaluator only if they implement this interface. In class which
-implements this interface number have to be represented as string and the
-representation is accessible via @method __toString().</td>
+	<td class="name"><a href="class-BN.Expression.Brackets.IBrackets.html">IBrackets</a></td>
+	<td>ShuntingYardParser use brackets for grouping operands with operands, so default
+associativity and precedence can be changed with brackets. Object which
+implements this interface represents one type of brackets, e.g. round brackets
+where left bracket is ( and right is equal to ).</td>
 </tr>
 </table>
 

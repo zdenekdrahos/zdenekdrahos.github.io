@@ -5,10 +5,10 @@
 	<meta name="generator" content="ApiGen 2.8.0" />
 	<meta name="robots" content="noindex" />
 
-	<title>File lib/bn-php/expression/token/ITokenizer.php | BN-PHP - Big Number data type for PHP</title>
+	<title>File lib/BN/Expression/Token/ITokenizer.php | BN-PHP - Big Number data type for PHP</title>
 
 	<script type="text/javascript" src="resources/combined.js?670845959"></script>
-	<script type="text/javascript" src="elementlist.js?1292720534"></script>
+	<script type="text/javascript" src="elementlist.js?3909941127"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -26,9 +26,17 @@
 						<ul>
 				<li><a href="namespace-BN.Collections.html">Collections</a>
 						</li>
-				<li class="active"><a href="namespace-BN.Expression.html">Expression</a>
+				<li class="active"><a href="namespace-BN.Expression.html">Expression<span></span></a>
+						<ul>
+				<li><a href="namespace-BN.Expression.Brackets.html">Brackets</a>
 						</li>
-							</ul></li>
+				<li><a href="namespace-BN.Expression.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-BN.Expression.Operator.html">Operator</a>
+						</li>
+				<li class="active"><a href="namespace-BN.Expression.Token.html">Token</a>
+						</li>
+							</ul></li></ul></li>
 				<li><a href="namespace-None.html">None</a>
 						</li>
 			</ul>
@@ -40,34 +48,15 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
-				<li><a href="class-BN.Expression.Associativity.html">Associativity</a></li>
-				<li><a href="class-BN.Expression.Brackets.html">Brackets</a></li>
-				<li><a href="class-BN.Expression.ExpressionEvaluator.html">ExpressionEvaluator</a></li>
-				<li><a href="class-BN.Expression.ExpressionPreparation.html">ExpressionPreparation</a></li>
-				<li><a href="class-BN.Expression.Operator.html">Operator</a></li>
-				<li><a href="class-BN.Expression.OperatorCallback.html">OperatorCallback</a></li>
-				<li><a href="class-BN.Expression.Operators.html">Operators</a></li>
-				<li><a href="class-BN.Expression.OperatorsFactory.html">OperatorsFactory</a></li>
-				<li><a href="class-BN.Expression.PostfixCalculator.html">PostfixCalculator</a></li>
-				<li><a href="class-BN.Expression.ShuntingYardParser.html">ShuntingYardParser</a></li>
-				<li><a href="class-BN.Expression.Tokenizer.html">Tokenizer</a></li>
+				<li><a href="class-BN.Expression.Token.Tokenizer.html">Tokenizer</a></li>
 			</ul>
 
 			<h3>Interfaces</h3>
 			<ul>
-				<li><a href="class-BN.Expression.IBrackets.html">IBrackets</a></li>
-				<li><a href="class-BN.Expression.IOperator.html">IOperator</a></li>
-				<li class="active"><a href="class-BN.Expression.ITokenizer.html">ITokenizer</a></li>
+				<li class="active"><a href="class-BN.Expression.Token.ITokenizer.html">ITokenizer</a></li>
 			</ul>
 
 
-			<h3>Exceptions</h3>
-			<ul>
-				<li><a href="class-BN.Expression.MismatchedBracketException.html">MismatchedBracketException</a></li>
-				<li><a href="class-BN.Expression.NumberCallbackException.html">NumberCallbackException</a></li>
-				<li><a href="class-BN.Expression.ParserException.html">ParserException</a></li>
-				<li><a href="class-BN.Expression.PostfixException.html">PostfixException</a></li>
-			</ul>
 
 
 		</div>
@@ -91,10 +80,10 @@
 				<a href="index.html" title="Overview"><span>Overview</span></a>
 			</li>
 			<li>
-				<a href="namespace-BN.Expression.html" title="Summary of BN\Expression"><span>Namespace</span></a>
+				<a href="namespace-BN.Expression.Token.html" title="Summary of BN\Expression\Token"><span>Namespace</span></a>
 			</li>
 			<li>
-				<a href="class-BN.Expression.ITokenizer.html" title="Summary of BN\Expression\ITokenizer"><span>Class</span></a>
+				<a href="class-BN.Expression.Token.ITokenizer.html" title="Summary of BN\Expression\Token\ITokenizer"><span>Class</span></a>
 			</li>
 		</ul>
 		<ul>
@@ -113,7 +102,7 @@
 </span></span><span id="5" class="l"><a class="l" href="#5"> 5: </a><span class="php-comment"> * @author Zdenek Drahos
 </span></span><span id="6" class="l"><a class="l" href="#6"> 6: </a><span class="php-comment"> */</span>
 </span><span id="7" class="l"><a class="l" href="#7"> 7: </a>
-</span><span id="8" class="l"><a class="l" href="#8"> 8: </a><span class="php-keyword1">namespace</span> BN\Expression;
+</span><span id="8" class="l"><a class="l" href="#8"> 8: </a><span class="php-keyword1">namespace</span> BN\Expression\Token;
 </span><span id="9" class="l"><a class="l" href="#9"> 9: </a>
 </span><span id="10" class="l"><a class="l" href="#10">10: </a><span class="php-comment">/**
 </span></span><span id="11" class="l"><a class="l" href="#11">11: </a><span class="php-comment"> * Used for breaking a text (in this case mathematical expression) into operators,
@@ -121,17 +110,15 @@
 </span></span><span id="13" class="l"><a class="l" href="#13">13: </a><span class="php-comment"> * Interface is also child of interface @see \IteratorAggregate.
 </span></span><span id="14" class="l"><a class="l" href="#14">14: </a><span class="php-comment"> * Used in @see ShuntingYardParser for tokenizing mathematical expressions.
 </span></span><span id="15" class="l"><a class="l" href="#15">15: </a><span class="php-comment"> */</span>
-</span><span id="16" class="l"><a class="l" href="#16">16: </a><span class="php-keyword1">interface</span> <a id="ITokenizer" href="#ITokenizer">ITokenizer</a> <span class="php-keyword1">extends</span> \IteratorAggregate {
-</span><span id="17" class="l"><a class="l" href="#17">17: </a>   
+</span><span id="16" class="l"><a class="l" href="#16">16: </a><span class="php-keyword1">interface</span> <a id="ITokenizer" href="#ITokenizer">ITokenizer</a> <span class="php-keyword1">extends</span> \IteratorAggregate
+</span><span id="17" class="l"><a class="l" href="#17">17: </a>{
 </span><span id="18" class="l"><a class="l" href="#18">18: </a>    <span class="php-comment">/**
 </span></span><span id="19" class="l"><a class="l" href="#19">19: </a><span class="php-comment">     * Tokenize input expression into operators, operands and brackets
 </span></span><span id="20" class="l"><a class="l" href="#20">20: </a><span class="php-comment">     * @param string $expression
 </span></span><span id="21" class="l"><a class="l" href="#21">21: </a><span class="php-comment">     */</span>
 </span><span id="22" class="l"><a class="l" href="#22">22: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_tokenizeExpression" href="#_tokenizeExpression">tokenizeExpression</a>(<span class="php-var">$expression</span>);
-</span><span id="23" class="l"><a class="l" href="#23">23: </a>    
-</span><span id="24" class="l"><a class="l" href="#24">24: </a>}
-</span><span id="25" class="l"><a class="l" href="#25">25: </a>
-</span><span id="26" class="l"><a class="l" href="#26">26: </a></span><span class="xlang">?&gt;</span></code></pre>
+</span><span id="23" class="l"><a class="l" href="#23">23: </a>}
+</span><span id="24" class="l"><a class="l" href="#24">24: </a></span></code></pre>
 
 	<div id="footer">
 		BN-PHP - Big Number data type for PHP API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>

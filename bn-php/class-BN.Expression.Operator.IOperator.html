@@ -4,10 +4,10 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="generator" content="ApiGen 2.8.0" />
 
-	<title>Interface BN\Expression\IOperator | BN-PHP - Big Number data type for PHP</title>
+	<title>Interface BN\Expression\Operator\IOperator | BN-PHP - Big Number data type for PHP</title>
 
 	<script type="text/javascript" src="resources/combined.js?670845959"></script>
-	<script type="text/javascript" src="elementlist.js?1292720534"></script>
+	<script type="text/javascript" src="elementlist.js?3909941127"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -25,9 +25,17 @@
 						<ul>
 				<li><a href="namespace-BN.Collections.html">Collections</a>
 						</li>
-				<li class="active"><a href="namespace-BN.Expression.html">Expression</a>
+				<li class="active"><a href="namespace-BN.Expression.html">Expression<span></span></a>
+						<ul>
+				<li><a href="namespace-BN.Expression.Brackets.html">Brackets</a>
 						</li>
-							</ul></li>
+				<li><a href="namespace-BN.Expression.Exception.html">Exception</a>
+						</li>
+				<li class="active"><a href="namespace-BN.Expression.Operator.html">Operator</a>
+						</li>
+				<li><a href="namespace-BN.Expression.Token.html">Token</a>
+						</li>
+							</ul></li></ul></li>
 				<li><a href="namespace-None.html">None</a>
 						</li>
 			</ul>
@@ -39,34 +47,18 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
-				<li><a href="class-BN.Expression.Associativity.html">Associativity</a></li>
-				<li><a href="class-BN.Expression.Brackets.html">Brackets</a></li>
-				<li><a href="class-BN.Expression.ExpressionEvaluator.html">ExpressionEvaluator</a></li>
-				<li><a href="class-BN.Expression.ExpressionPreparation.html">ExpressionPreparation</a></li>
-				<li><a href="class-BN.Expression.Operator.html">Operator</a></li>
-				<li><a href="class-BN.Expression.OperatorCallback.html">OperatorCallback</a></li>
-				<li><a href="class-BN.Expression.Operators.html">Operators</a></li>
-				<li><a href="class-BN.Expression.OperatorsFactory.html">OperatorsFactory</a></li>
-				<li><a href="class-BN.Expression.PostfixCalculator.html">PostfixCalculator</a></li>
-				<li><a href="class-BN.Expression.ShuntingYardParser.html">ShuntingYardParser</a></li>
-				<li><a href="class-BN.Expression.Tokenizer.html">Tokenizer</a></li>
+				<li><a href="class-BN.Expression.Operator.Associativity.html">Associativity</a></li>
+				<li><a href="class-BN.Expression.Operator.Operator.html">Operator</a></li>
+				<li><a href="class-BN.Expression.Operator.OperatorCallback.html">OperatorCallback</a></li>
+				<li><a href="class-BN.Expression.Operator.Operators.html">Operators</a></li>
 			</ul>
 
 			<h3>Interfaces</h3>
 			<ul>
-				<li><a href="class-BN.Expression.IBrackets.html">IBrackets</a></li>
-				<li class="active"><a href="class-BN.Expression.IOperator.html">IOperator</a></li>
-				<li><a href="class-BN.Expression.ITokenizer.html">ITokenizer</a></li>
+				<li class="active"><a href="class-BN.Expression.Operator.IOperator.html">IOperator</a></li>
 			</ul>
 
 
-			<h3>Exceptions</h3>
-			<ul>
-				<li><a href="class-BN.Expression.MismatchedBracketException.html">MismatchedBracketException</a></li>
-				<li><a href="class-BN.Expression.NumberCallbackException.html">NumberCallbackException</a></li>
-				<li><a href="class-BN.Expression.ParserException.html">ParserException</a></li>
-				<li><a href="class-BN.Expression.PostfixException.html">PostfixException</a></li>
-			</ul>
 
 
 		</div>
@@ -90,7 +82,7 @@
 				<a href="index.html" title="Overview"><span>Overview</span></a>
 			</li>
 			<li>
-				<a href="namespace-BN.Expression.html" title="Summary of BN\Expression"><span>Namespace</span></a>
+				<a href="namespace-BN.Expression.Operator.html" title="Summary of BN\Expression\Operator"><span>Namespace</span></a>
 			</li>
 			<li class="active">
 <span>Class</span>			</li>
@@ -123,7 +115,7 @@ postfix notation.</p>
 
 	<div>
 		<h4>Direct known implementers</h4>
-			<a href="class-BN.Expression.Operator.html">BN\Expression\Operator</a>
+			<a href="class-BN.Expression.Operator.Operator.html">BN\Expression\Operator\Operator</a>
 	</div>
 
 
@@ -132,12 +124,12 @@ postfix notation.</p>
 	<div class="info">
 		
 		
-		<b>Namespace:</b> <a href="namespace-BN.html">BN</a>\<a href="namespace-BN.Expression.html">Expression</a><br />
+		<b>Namespace:</b> <a href="namespace-BN.html">BN</a>\<a href="namespace-BN.Expression.html">Expression</a>\<a href="namespace-BN.Expression.Operator.html">Operator</a><br />
 		
 
 				<b>Example:</b>
 				addition: symbol +, precedence 2, associativity: left<br />
-		<b>Located at</b> <a href="source-class-BN.Expression.IOperator.html#10-45" title="Go to source code">lib/bn-php/expression/operators/IOperator.php</a><br />
+		<b>Located at</b> <a href="source-class-BN.Expression.Operator.IOperator.html#10-45" title="Go to source code">lib/BN/Expression/Operator/IOperator.php</a><br />
 	</div>
 
 
@@ -155,7 +147,7 @@ postfix notation.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getSymbol">#</a>
-		<code><a href="source-class-BN.Expression.IOperator.html#18-22" title="Go to source code">getSymbol</a>( )</code>
+		<code><a href="source-class-BN.Expression.Operator.IOperator.html#18-22" title="Go to source code">getSymbol</a>( )</code>
 
 		<div class="description short">
 			
@@ -192,7 +184,7 @@ postfix notation.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getPrecedence">#</a>
-		<code><a href="source-class-BN.Expression.IOperator.html#24-30" title="Go to source code">getPrecedence</a>( )</code>
+		<code><a href="source-class-BN.Expression.Operator.IOperator.html#24-30" title="Go to source code">getPrecedence</a>( )</code>
 
 		<div class="description short">
 			
@@ -226,14 +218,14 @@ operator * should have higher precedence than operator +</p>
 
 		<td class="attributes"><code>
 			 public 
-			<code><a href="class-BN.Expression.Associativity.html">BN\Expression\Associativity</a></code>
+			<code><a href="class-BN.Expression.Operator.Associativity.html">BN\Expression\Operator\Associativity</a></code>
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getAssociativity">#</a>
-		<code><a href="source-class-BN.Expression.IOperator.html#32-38" title="Go to source code">getAssociativity</a>( )</code>
+		<code><a href="source-class-BN.Expression.Operator.IOperator.html#32-38" title="Go to source code">getAssociativity</a>( )</code>
 
 		<div class="description short">
 			
@@ -252,7 +244,7 @@ how are grouped operators with same precedence if no brackets in expression.</p>
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code><code><a href="class-BN.Expression.Associativity.html">BN\Expression\Associativity</a></code></code><br>Returns class constant of @see Associativity class<br />
+					<code><code><a href="class-BN.Expression.Operator.Associativity.html">BN\Expression\Operator\Associativity</a></code></code><br>Returns class constant of @see Associativity class<br />
 				</div>
 
 
@@ -272,7 +264,7 @@ how are grouped operators with same precedence if no brackets in expression.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getArgumentsCount">#</a>
-		<code><a href="source-class-BN.Expression.IOperator.html#40-44" title="Go to source code">getArgumentsCount</a>( )</code>
+		<code><a href="source-class-BN.Expression.Operator.IOperator.html#40-44" title="Go to source code">getArgumentsCount</a>( )</code>
 
 		<div class="description short">
 			

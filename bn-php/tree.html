@@ -7,7 +7,7 @@
 	<title>Tree | BN-PHP - Big Number data type for PHP</title>
 
 	<script type="text/javascript" src="resources/combined.js?670845959"></script>
-	<script type="text/javascript" src="elementlist.js?1292720534"></script>
+	<script type="text/javascript" src="elementlist.js?3909941127"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -25,9 +25,17 @@
 						<ul>
 				<li><a href="namespace-BN.Collections.html">Collections</a>
 						</li>
-				<li><a href="namespace-BN.Expression.html">Expression</a>
+				<li><a href="namespace-BN.Expression.html">Expression<span></span></a>
+						<ul>
+				<li><a href="namespace-BN.Expression.Brackets.html">Brackets</a>
 						</li>
-							</ul></li>
+				<li><a href="namespace-BN.Expression.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-BN.Expression.Operator.html">Operator</a>
+						</li>
+				<li><a href="namespace-BN.Expression.Token.html">Token</a>
+						</li>
+							</ul></li></ul></li>
 				<li><a href="namespace-None.html">None</a>
 						</li>
 			</ul>
@@ -43,17 +51,17 @@
 				<li><a href="class-BN.Collections.ObjectArray.html">BN\Collections\ObjectArray</a></li>
 				<li><a href="class-BN.Collections.Queue.html">BN\Collections\Queue</a></li>
 				<li><a href="class-BN.Collections.Stack.html">BN\Collections\Stack</a></li>
-				<li><a href="class-BN.Expression.Associativity.html">BN\Expression\Associativity</a></li>
-				<li><a href="class-BN.Expression.Brackets.html">BN\Expression\Brackets</a></li>
+				<li><a href="class-BN.Expression.Brackets.Brackets.html">BN\Expression\Brackets\Brackets</a></li>
 				<li><a href="class-BN.Expression.ExpressionEvaluator.html">BN\Expression\ExpressionEvaluator</a></li>
 				<li><a href="class-BN.Expression.ExpressionPreparation.html">BN\Expression\ExpressionPreparation</a></li>
-				<li><a href="class-BN.Expression.Operator.html">BN\Expression\Operator</a></li>
-				<li><a href="class-BN.Expression.OperatorCallback.html">BN\Expression\OperatorCallback</a></li>
-				<li><a href="class-BN.Expression.Operators.html">BN\Expression\Operators</a></li>
+				<li><a href="class-BN.Expression.Operator.Associativity.html">BN\Expression\Operator\Associativity</a></li>
+				<li><a href="class-BN.Expression.Operator.Operator.html">BN\Expression\Operator\Operator</a></li>
+				<li><a href="class-BN.Expression.Operator.OperatorCallback.html">BN\Expression\Operator\OperatorCallback</a></li>
+				<li><a href="class-BN.Expression.Operator.Operators.html">BN\Expression\Operator\Operators</a></li>
 				<li><a href="class-BN.Expression.OperatorsFactory.html">BN\Expression\OperatorsFactory</a></li>
 				<li><a href="class-BN.Expression.PostfixCalculator.html">BN\Expression\PostfixCalculator</a></li>
 				<li><a href="class-BN.Expression.ShuntingYardParser.html">BN\Expression\ShuntingYardParser</a></li>
-				<li><a href="class-BN.Expression.Tokenizer.html">BN\Expression\Tokenizer</a></li>
+				<li><a href="class-BN.Expression.Token.Tokenizer.html">BN\Expression\Token\Tokenizer</a></li>
 				<li><a href="class-BN.Number.html">BN\Number</a></li>
 				<li><a href="class-BN.NumberFactory.html">BN\NumberFactory</a></li>
 				<li><a href="class-BN.Rounding.html">BN\Rounding</a></li>
@@ -61,9 +69,9 @@
 
 			<h3>Interfaces</h3>
 			<ul>
-				<li><a href="class-BN.Expression.IBrackets.html">BN\Expression\IBrackets</a></li>
-				<li><a href="class-BN.Expression.IOperator.html">BN\Expression\IOperator</a></li>
-				<li><a href="class-BN.Expression.ITokenizer.html">BN\Expression\ITokenizer</a></li>
+				<li><a href="class-BN.Expression.Brackets.IBrackets.html">BN\Expression\Brackets\IBrackets</a></li>
+				<li><a href="class-BN.Expression.Operator.IOperator.html">BN\Expression\Operator\IOperator</a></li>
+				<li><a href="class-BN.Expression.Token.ITokenizer.html">BN\Expression\Token\ITokenizer</a></li>
 				<li><a href="class-BN.INumber.html">BN\INumber</a></li>
 			</ul>
 
@@ -72,10 +80,10 @@
 			<ul>
 				<li><a href="class-BN.Collections.InvalidObjectStateException.html">BN\Collections\InvalidObjectStateException</a></li>
 				<li><a href="class-BN.Collections.NullArgumentException.html">BN\Collections\NullArgumentException</a></li>
-				<li><a href="class-BN.Expression.MismatchedBracketException.html">BN\Expression\MismatchedBracketException</a></li>
-				<li><a href="class-BN.Expression.NumberCallbackException.html">BN\Expression\NumberCallbackException</a></li>
-				<li><a href="class-BN.Expression.ParserException.html">BN\Expression\ParserException</a></li>
-				<li><a href="class-BN.Expression.PostfixException.html">BN\Expression\PostfixException</a></li>
+				<li><a href="class-BN.Expression.Exception.MismatchedBracketException.html">BN\Expression\Exception\MismatchedBracketException</a></li>
+				<li><a href="class-BN.Expression.Exception.NumberCallbackException.html">BN\Expression\Exception\NumberCallbackException</a></li>
+				<li><a href="class-BN.Expression.Exception.ParserException.html">BN\Expression\Exception\ParserException</a></li>
+				<li><a href="class-BN.Expression.Exception.PostfixException.html">BN\Expression\Exception\PostfixException</a></li>
 			</ul>
 
 
@@ -153,16 +161,9 @@
 
 				</ul></li>
 
-			<li><div class="notlast"><a href="class-BN.Expression.Associativity.html"><span>BN\Expression\Associativity</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-BN.Expression.Brackets.html"><span>BN\Expression\Brackets</span></a>
+			<li><div class="notlast"><a href="class-BN.Expression.Brackets.Brackets.html"><span>BN\Expression\Brackets\Brackets</span></a>
 			 implements 
-				<a href="class-BN.Expression.IBrackets.html"><span>BN\Expression\IBrackets</span></a>
+				<a href="class-BN.Expression.Brackets.IBrackets.html"><span>BN\Expression\Brackets\IBrackets</span></a>
 			
 			
 			</div>
@@ -183,23 +184,30 @@
 
 				</li>
 
-			<li><div class="notlast"><a href="class-BN.Expression.Operator.html"><span>BN\Expression\Operator</span></a>
+			<li><div class="notlast"><a href="class-BN.Expression.Operator.Associativity.html"><span>BN\Expression\Operator\Associativity</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BN.Expression.Operator.Operator.html"><span>BN\Expression\Operator\Operator</span></a>
 			 implements 
-				<a href="class-BN.Expression.IOperator.html"><span>BN\Expression\IOperator</span></a>
+				<a href="class-BN.Expression.Operator.IOperator.html"><span>BN\Expression\Operator\IOperator</span></a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-BN.Expression.OperatorCallback.html"><span>BN\Expression\OperatorCallback</span></a>
+			<li><div class="notlast"><a href="class-BN.Expression.Operator.OperatorCallback.html"><span>BN\Expression\Operator\OperatorCallback</span></a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-BN.Expression.Operators.html"><span>BN\Expression\Operators</span></a>
+			<li><div class="notlast"><a href="class-BN.Expression.Operator.Operators.html"><span>BN\Expression\Operator\Operators</span></a>
 			
 			
 			</div>
@@ -227,9 +235,9 @@
 
 				</li>
 
-			<li><div class="notlast"><a href="class-BN.Expression.Tokenizer.html"><span>BN\Expression\Tokenizer</span></a>
+			<li><div class="notlast"><a href="class-BN.Expression.Token.Tokenizer.html"><span>BN\Expression\Token\Tokenizer</span></a>
 			 implements 
-				<a href="class-BN.Expression.ITokenizer.html"><span>BN\Expression\ITokenizer</span></a>
+				<a href="class-BN.Expression.Token.ITokenizer.html"><span>BN\Expression\Token\ITokenizer</span></a>
 			
 			
 			</div>
@@ -266,21 +274,21 @@
 <div class="tree">
 	<ul>
 
-			<li><div class="notlast"><a href="class-BN.Expression.IBrackets.html"><span>BN\Expression\IBrackets</span></a>
+			<li><div class="notlast"><a href="class-BN.Expression.Brackets.IBrackets.html"><span>BN\Expression\Brackets\IBrackets</span></a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-BN.Expression.IOperator.html"><span>BN\Expression\IOperator</span></a>
+			<li><div class="notlast"><a href="class-BN.Expression.Operator.IOperator.html"><span>BN\Expression\Operator\IOperator</span></a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-BN.Expression.ITokenizer.html"><span>BN\Expression\ITokenizer</span></a>
+			<li><div class="notlast"><a href="class-BN.Expression.Token.ITokenizer.html"><span>BN\Expression\Token\ITokenizer</span></a>
 			 implements 
 <span>IteratorAggregate</span>
 			
@@ -323,21 +331,21 @@
 
 				</li>
 
-			<li><div class="notlast"><a href="class-BN.Expression.ParserException.html"><span>BN\Expression\ParserException</span></a>
+			<li><div class="notlast"><a href="class-BN.Expression.Exception.ParserException.html"><span>BN\Expression\Exception\ParserException</span></a>
 			
 			
 			</div>
 
 				<ul>
 
-			<li class="last"><div class="last"><a href="class-BN.Expression.MismatchedBracketException.html"><span>BN\Expression\MismatchedBracketException</span></a>
+			<li class="last"><div class="last"><a href="class-BN.Expression.Exception.MismatchedBracketException.html"><span>BN\Expression\Exception\MismatchedBracketException</span></a>
 			
 			
 			</div>
 
 				</ul></li>
 
-			<li><div class="notlast"><a href="class-BN.Expression.PostfixException.html"><span>BN\Expression\PostfixException</span></a>
+			<li><div class="notlast"><a href="class-BN.Expression.Exception.PostfixException.html"><span>BN\Expression\Exception\PostfixException</span></a>
 			
 			
 			</div>
@@ -357,7 +365,7 @@
 
 				</li>
 
-			<li class="last"><div class="last"><a href="class-BN.Expression.NumberCallbackException.html"><span>BN\Expression\NumberCallbackException</span></a>
+			<li class="last"><div class="last"><a href="class-BN.Expression.Exception.NumberCallbackException.html"><span>BN\Expression\Exception\NumberCallbackException</span></a>
 			
 			
 			</div>

@@ -4,10 +4,10 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="generator" content="ApiGen 2.8.0" />
 
-	<title>Interface BN\Expression\ITokenizer | BN-PHP - Big Number data type for PHP</title>
+	<title>Interface BN\Expression\Token\ITokenizer | BN-PHP - Big Number data type for PHP</title>
 
 	<script type="text/javascript" src="resources/combined.js?670845959"></script>
-	<script type="text/javascript" src="elementlist.js?1292720534"></script>
+	<script type="text/javascript" src="elementlist.js?3909941127"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -25,9 +25,17 @@
 						<ul>
 				<li><a href="namespace-BN.Collections.html">Collections</a>
 						</li>
-				<li class="active"><a href="namespace-BN.Expression.html">Expression</a>
+				<li class="active"><a href="namespace-BN.Expression.html">Expression<span></span></a>
+						<ul>
+				<li><a href="namespace-BN.Expression.Brackets.html">Brackets</a>
 						</li>
-							</ul></li>
+				<li><a href="namespace-BN.Expression.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-BN.Expression.Operator.html">Operator</a>
+						</li>
+				<li class="active"><a href="namespace-BN.Expression.Token.html">Token</a>
+						</li>
+							</ul></li></ul></li>
 				<li><a href="namespace-None.html">None</a>
 						</li>
 			</ul>
@@ -39,34 +47,15 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
-				<li><a href="class-BN.Expression.Associativity.html">Associativity</a></li>
-				<li><a href="class-BN.Expression.Brackets.html">Brackets</a></li>
-				<li><a href="class-BN.Expression.ExpressionEvaluator.html">ExpressionEvaluator</a></li>
-				<li><a href="class-BN.Expression.ExpressionPreparation.html">ExpressionPreparation</a></li>
-				<li><a href="class-BN.Expression.Operator.html">Operator</a></li>
-				<li><a href="class-BN.Expression.OperatorCallback.html">OperatorCallback</a></li>
-				<li><a href="class-BN.Expression.Operators.html">Operators</a></li>
-				<li><a href="class-BN.Expression.OperatorsFactory.html">OperatorsFactory</a></li>
-				<li><a href="class-BN.Expression.PostfixCalculator.html">PostfixCalculator</a></li>
-				<li><a href="class-BN.Expression.ShuntingYardParser.html">ShuntingYardParser</a></li>
-				<li><a href="class-BN.Expression.Tokenizer.html">Tokenizer</a></li>
+				<li><a href="class-BN.Expression.Token.Tokenizer.html">Tokenizer</a></li>
 			</ul>
 
 			<h3>Interfaces</h3>
 			<ul>
-				<li><a href="class-BN.Expression.IBrackets.html">IBrackets</a></li>
-				<li><a href="class-BN.Expression.IOperator.html">IOperator</a></li>
-				<li class="active"><a href="class-BN.Expression.ITokenizer.html">ITokenizer</a></li>
+				<li class="active"><a href="class-BN.Expression.Token.ITokenizer.html">ITokenizer</a></li>
 			</ul>
 
 
-			<h3>Exceptions</h3>
-			<ul>
-				<li><a href="class-BN.Expression.MismatchedBracketException.html">MismatchedBracketException</a></li>
-				<li><a href="class-BN.Expression.NumberCallbackException.html">NumberCallbackException</a></li>
-				<li><a href="class-BN.Expression.ParserException.html">ParserException</a></li>
-				<li><a href="class-BN.Expression.PostfixException.html">PostfixException</a></li>
-			</ul>
 
 
 		</div>
@@ -90,7 +79,7 @@
 				<a href="index.html" title="Overview"><span>Overview</span></a>
 			</li>
 			<li>
-				<a href="namespace-BN.Expression.html" title="Summary of BN\Expression"><span>Namespace</span></a>
+				<a href="namespace-BN.Expression.Token.html" title="Summary of BN\Expression\Token"><span>Namespace</span></a>
 			</li>
 			<li class="active">
 <span>Class</span>			</li>
@@ -119,7 +108,7 @@ ShuntingYardParser for tokenizing mathematical expressions.</p>
 
 	<dl class="tree">
 		<dd style="padding-left:0px">
-<b><span>BN\Expression\ITokenizer</span></b>			
+<b><span>BN\Expression\Token\ITokenizer</span></b>			
 			 implements 
 <span>IteratorAggregate</span>
 			
@@ -132,7 +121,7 @@ ShuntingYardParser for tokenizing mathematical expressions.</p>
 
 	<div>
 		<h4>Direct known implementers</h4>
-			<a href="class-BN.Expression.Tokenizer.html">BN\Expression\Tokenizer</a>
+			<a href="class-BN.Expression.Token.Tokenizer.html">BN\Expression\Token\Tokenizer</a>
 	</div>
 
 
@@ -141,10 +130,10 @@ ShuntingYardParser for tokenizing mathematical expressions.</p>
 	<div class="info">
 		
 		
-		<b>Namespace:</b> <a href="namespace-BN.html">BN</a>\<a href="namespace-BN.Expression.html">Expression</a><br />
+		<b>Namespace:</b> <a href="namespace-BN.html">BN</a>\<a href="namespace-BN.Expression.html">Expression</a>\<a href="namespace-BN.Expression.Token.html">Token</a><br />
 		
 
-		<b>Located at</b> <a href="source-class-BN.Expression.ITokenizer.html#10-24" title="Go to source code">lib/bn-php/expression/token/ITokenizer.php</a><br />
+		<b>Located at</b> <a href="source-class-BN.Expression.Token.ITokenizer.html#10-23" title="Go to source code">lib/BN/Expression/Token/ITokenizer.php</a><br />
 	</div>
 
 
@@ -162,7 +151,7 @@ ShuntingYardParser for tokenizing mathematical expressions.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_tokenizeExpression">#</a>
-		<code><a href="source-class-BN.Expression.ITokenizer.html#18-22" title="Go to source code">tokenizeExpression</a>( <span>string <var>$expression</var></span> )</code>
+		<code><a href="source-class-BN.Expression.Token.ITokenizer.html#18-22" title="Go to source code">tokenizeExpression</a>( <span>string <var>$expression</var></span> )</code>
 
 		<div class="description short">
 			

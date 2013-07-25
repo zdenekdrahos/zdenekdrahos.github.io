@@ -7,7 +7,7 @@
 	<title>Namespace BN\Expression | BN-PHP - Big Number data type for PHP</title>
 
 	<script type="text/javascript" src="resources/combined.js?670845959"></script>
-	<script type="text/javascript" src="elementlist.js?1292720534"></script>
+	<script type="text/javascript" src="elementlist.js?3909941127"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -25,9 +25,17 @@
 						<ul>
 				<li><a href="namespace-BN.Collections.html">Collections</a>
 						</li>
-				<li class="active"><a href="namespace-BN.Expression.html">Expression</a>
+				<li class="active"><a href="namespace-BN.Expression.html">Expression<span></span></a>
+						<ul>
+				<li><a href="namespace-BN.Expression.Brackets.html">Brackets</a>
 						</li>
-							</ul></li>
+				<li><a href="namespace-BN.Expression.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-BN.Expression.Operator.html">Operator</a>
+						</li>
+				<li><a href="namespace-BN.Expression.Token.html">Token</a>
+						</li>
+							</ul></li></ul></li>
 				<li><a href="namespace-None.html">None</a>
 						</li>
 			</ul>
@@ -39,34 +47,15 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
-				<li><a href="class-BN.Expression.Associativity.html">Associativity</a></li>
-				<li><a href="class-BN.Expression.Brackets.html">Brackets</a></li>
 				<li><a href="class-BN.Expression.ExpressionEvaluator.html">ExpressionEvaluator</a></li>
 				<li><a href="class-BN.Expression.ExpressionPreparation.html">ExpressionPreparation</a></li>
-				<li><a href="class-BN.Expression.Operator.html">Operator</a></li>
-				<li><a href="class-BN.Expression.OperatorCallback.html">OperatorCallback</a></li>
-				<li><a href="class-BN.Expression.Operators.html">Operators</a></li>
 				<li><a href="class-BN.Expression.OperatorsFactory.html">OperatorsFactory</a></li>
 				<li><a href="class-BN.Expression.PostfixCalculator.html">PostfixCalculator</a></li>
 				<li><a href="class-BN.Expression.ShuntingYardParser.html">ShuntingYardParser</a></li>
-				<li><a href="class-BN.Expression.Tokenizer.html">Tokenizer</a></li>
-			</ul>
-
-			<h3>Interfaces</h3>
-			<ul>
-				<li><a href="class-BN.Expression.IBrackets.html">IBrackets</a></li>
-				<li><a href="class-BN.Expression.IOperator.html">IOperator</a></li>
-				<li><a href="class-BN.Expression.ITokenizer.html">ITokenizer</a></li>
 			</ul>
 
 
-			<h3>Exceptions</h3>
-			<ul>
-				<li><a href="class-BN.Expression.MismatchedBracketException.html">MismatchedBracketException</a></li>
-				<li><a href="class-BN.Expression.NumberCallbackException.html">NumberCallbackException</a></li>
-				<li><a href="class-BN.Expression.ParserException.html">ParserException</a></li>
-				<li><a href="class-BN.Expression.PostfixException.html">PostfixException</a></li>
-			</ul>
+
 
 
 		</div>
@@ -106,20 +95,25 @@
 <div id="content" class="namespace">
 	<h1>Namespace <a href="namespace-BN.html">BN</a>\Expression</h1>
 
+	<table class="summary" id="namespaces">
+	<caption>Namespaces summary</caption>
+	<tr>
+		<td class="name"><a href="namespace-BN.Expression.Brackets.html">BN\Expression\Brackets</a></td>
+	</tr>
+	<tr>
+		<td class="name"><a href="namespace-BN.Expression.Exception.html">BN\Expression\Exception</a></td>
+	</tr>
+	<tr>
+		<td class="name"><a href="namespace-BN.Expression.Operator.html">BN\Expression\Operator</a></td>
+	</tr>
+	<tr>
+		<td class="name"><a href="namespace-BN.Expression.Token.html">BN\Expression\Token</a></td>
+	</tr>
+	</table>
 
 
 <table class="summary" id="classes">
 <caption>Classes summary</caption>
-<tr>
-	<td class="name"><a href="class-BN.Expression.Associativity.html">Associativity</a></td>
-	<td>Determines how operators of the same precedence are grouped in the absence of
-brackets.</td>
-</tr>
-<tr>
-	<td class="name"><a href="class-BN.Expression.Brackets.html">Brackets</a></td>
-	<td>Implementation of brackets used in mathematical expressions. Left and right
-brackets are saved as two different strings.</td>
-</tr>
 <tr>
 	<td class="name"><a href="class-BN.Expression.ExpressionEvaluator.html">ExpressionEvaluator</a></td>
 	<td>For evaluation of mathematical expression in infix notation.</td>
@@ -129,20 +123,6 @@ brackets are saved as two different strings.</td>
 	<td>Helper class for preparation of expression before parsing and evaluation. It
 adds spaces around brackets and operators. Spaces around minus operator is added
 only if minus is surrounded with numbers.</td>
-</tr>
-<tr>
-	<td class="name"><a href="class-BN.Expression.Operator.html">Operator</a></td>
-	<td>Representation of mathematical operator with unique symbol, precedence, type of
-associativity and arguments count.</td>
-</tr>
-<tr>
-	<td class="name"><a href="class-BN.Expression.OperatorCallback.html">OperatorCallback</a></td>
-	<td>Operator with defined @see IOperator and callback for evaluating. Used for
-calculation result of mathematical expression in postfix notation.</td>
-</tr>
-<tr>
-	<td class="name"><a href="class-BN.Expression.Operators.html">Operators</a></td>
-	<td>Helper class for loading and creating operators for ExpressionEvaluator.</td>
 </tr>
 <tr>
 	<td class="name"><a href="class-BN.Expression.OperatorsFactory.html">OperatorsFactory</a></td>
@@ -161,65 +141,10 @@ queue can be taken from @see ShuntingYardParser.</td>
 parsing is queue with operands and operators (brackets are not needed in postfix
 notation)</td>
 </tr>
-<tr>
-	<td class="name"><a href="class-BN.Expression.Tokenizer.html">Tokenizer</a></td>
-	<td>Tokenize expressions by space. Array of tokens is available via iterator.</td>
-</tr>
-</table>
-
-<table class="summary" id="interfaces">
-<caption>Interfaces summary</caption>
-<tr>
-	<td class="name"><a href="class-BN.Expression.IBrackets.html">IBrackets</a></td>
-	<td>ShuntingYardParser use brackets for grouping operands with operands, so default
-associativity and precedence can be changed with brackets. Object which
-implements this interface represents one type of brackets, e.g. round brackets
-where left bracket is ( and right is equal to ).</td>
-</tr>
-<tr>
-	<td class="name"><a href="class-BN.Expression.IOperator.html">IOperator</a></td>
-	<td>Operator in mathematical expression. Every operator should have string symbol,
-numeric precedence, type of associativity (left or right) and number of
-arguments. Used in ShuntingYardParser for parsing tokenized expression into
-postfix notation.</td>
-</tr>
-<tr>
-	<td class="name"><a href="class-BN.Expression.ITokenizer.html">ITokenizer</a></td>
-	<td>Used for breaking a text (in this case mathematical expression) into operators,
-operands and brackets. Parsed tokens are available only via iterator. Interface
-is also child of interface @see \IteratorAggregate. Used in @see
-ShuntingYardParser for tokenizing mathematical expressions.</td>
-</tr>
 </table>
 
 
-<table class="summary" id="exceptions">
-<caption>Exceptions summary</caption>
-<tr>
-	<td class="name"><a href="class-BN.Expression.MismatchedBracketException.html">MismatchedBracketException</a></td>
-	<td>Exception thrown if there is mismatched left/right bracket in Shunting Yard
-algorithm.</td>
-</tr>
-<tr>
-	<td class="name"><a href="class-BN.Expression.NumberCallbackException.html">NumberCallbackException</a></td>
-	<td>Exception thrown if an argument in OperatorCallback is not instanceof INumber or
-if method in callback doesn't exists in INumber</td>
-</tr>
-<tr>
-	<td class="name"><a href="class-BN.Expression.ParserException.html">ParserException</a></td>
-	<td>Exception thrown if there error during Shunting Yard algorithm. It can be
-invalid value in expression or if tokenizer doesn't separate expression into
-strings.</td>
-</tr>
-<tr>
-	<td class="name"><a href="class-BN.Expression.PostfixException.html">PostfixException</a></td>
-	<td>Exception thrown if there is error during evaluating of expression in postfix
-notation. Causes: - other value than operator (@see IOperator) or number (@see
-\BN\INumber) in expression - operator implements IOperator but callback is not
-definied in PostfixCalculator - if there too many or little arguments for
-operator (every operator has number of required arguments)</td>
-</tr>
-</table>
+
 
 
 </div>

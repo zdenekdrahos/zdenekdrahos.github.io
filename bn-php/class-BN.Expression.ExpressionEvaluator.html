@@ -7,7 +7,7 @@
 	<title>Class BN\Expression\ExpressionEvaluator | BN-PHP - Big Number data type for PHP</title>
 
 	<script type="text/javascript" src="resources/combined.js?670845959"></script>
-	<script type="text/javascript" src="elementlist.js?1292720534"></script>
+	<script type="text/javascript" src="elementlist.js?3909941127"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -25,9 +25,17 @@
 						<ul>
 				<li><a href="namespace-BN.Collections.html">Collections</a>
 						</li>
-				<li class="active"><a href="namespace-BN.Expression.html">Expression</a>
+				<li class="active"><a href="namespace-BN.Expression.html">Expression<span></span></a>
+						<ul>
+				<li><a href="namespace-BN.Expression.Brackets.html">Brackets</a>
 						</li>
-							</ul></li>
+				<li><a href="namespace-BN.Expression.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-BN.Expression.Operator.html">Operator</a>
+						</li>
+				<li><a href="namespace-BN.Expression.Token.html">Token</a>
+						</li>
+							</ul></li></ul></li>
 				<li><a href="namespace-None.html">None</a>
 						</li>
 			</ul>
@@ -39,34 +47,15 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
-				<li><a href="class-BN.Expression.Associativity.html">Associativity</a></li>
-				<li><a href="class-BN.Expression.Brackets.html">Brackets</a></li>
 				<li class="active"><a href="class-BN.Expression.ExpressionEvaluator.html">ExpressionEvaluator</a></li>
 				<li><a href="class-BN.Expression.ExpressionPreparation.html">ExpressionPreparation</a></li>
-				<li><a href="class-BN.Expression.Operator.html">Operator</a></li>
-				<li><a href="class-BN.Expression.OperatorCallback.html">OperatorCallback</a></li>
-				<li><a href="class-BN.Expression.Operators.html">Operators</a></li>
 				<li><a href="class-BN.Expression.OperatorsFactory.html">OperatorsFactory</a></li>
 				<li><a href="class-BN.Expression.PostfixCalculator.html">PostfixCalculator</a></li>
 				<li><a href="class-BN.Expression.ShuntingYardParser.html">ShuntingYardParser</a></li>
-				<li><a href="class-BN.Expression.Tokenizer.html">Tokenizer</a></li>
-			</ul>
-
-			<h3>Interfaces</h3>
-			<ul>
-				<li><a href="class-BN.Expression.IBrackets.html">IBrackets</a></li>
-				<li><a href="class-BN.Expression.IOperator.html">IOperator</a></li>
-				<li><a href="class-BN.Expression.ITokenizer.html">ITokenizer</a></li>
 			</ul>
 
 
-			<h3>Exceptions</h3>
-			<ul>
-				<li><a href="class-BN.Expression.MismatchedBracketException.html">MismatchedBracketException</a></li>
-				<li><a href="class-BN.Expression.NumberCallbackException.html">NumberCallbackException</a></li>
-				<li><a href="class-BN.Expression.ParserException.html">ParserException</a></li>
-				<li><a href="class-BN.Expression.PostfixException.html">PostfixException</a></li>
-			</ul>
+
 
 
 		</div>
@@ -128,7 +117,7 @@
 		<b>Namespace:</b> <a href="namespace-BN.html">BN</a>\<a href="namespace-BN.Expression.html">Expression</a><br />
 		
 
-		<b>Located at</b> <a href="source-class-BN.Expression.ExpressionEvaluator.html#10-109" title="Go to source code">lib/bn-php/expression/evaluator/ExpressionEvaluator.php</a><br />
+		<b>Located at</b> <a href="source-class-BN.Expression.ExpressionEvaluator.html#13-121" title="Go to source code">lib/BN/Expression/ExpressionEvaluator.php</a><br />
 	</div>
 
 
@@ -146,7 +135,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-BN.Expression.ExpressionEvaluator.html#22-34" title="Go to source code">__construct</a>( <span><code><a href="class-BN.Expression.ShuntingYardParser.html">BN\Expression\ShuntingYardParser</a></code> <var>$shuntingYard</var> = <span class="php-keyword1">null</span></span>, <span><code><a href="class-BN.Expression.PostfixCalculator.html">BN\Expression\PostfixCalculator</a></code> <var>$postfixCalculator</var> = <span class="php-keyword1">null</span></span>, <span><code><a href="class-BN.Expression.ExpressionPreparation.html">BN\Expression\ExpressionPreparation</a></code> <var>$preparation</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-BN.Expression.ExpressionEvaluator.html#25-38" title="Go to source code">__construct</a>( <span><code><a href="class-BN.Expression.ShuntingYardParser.html">BN\Expression\ShuntingYardParser</a></code> <var>$shuntingYard</var> = <span class="php-keyword1">null</span></span>, <span><code><a href="class-BN.Expression.PostfixCalculator.html">BN\Expression\PostfixCalculator</a></code> <var>$postfixCalculator</var> = <span class="php-keyword1">null</span></span>, <span><code><a href="class-BN.Expression.ExpressionPreparation.html">BN\Expression\ExpressionPreparation</a></code> <var>$preparation</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			
@@ -192,7 +181,7 @@ is created as new instance without any special settings.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setOperators">#</a>
-		<code><a href="source-class-BN.Expression.ExpressionEvaluator.html#36-45" title="Go to source code">setOperators</a>( <span><code><a href="class-BN.Expression.Operators.html">BN\Expression\Operators</a></code> <var>$operators</var></span> )</code>
+		<code><a href="source-class-BN.Expression.ExpressionEvaluator.html#40-50" title="Go to source code">setOperators</a>( <span><code><a href="class-BN.Expression.Operator.Operators.html">BN\Expression\Operator\Operators</a></code> <var>$operators</var></span> )</code>
 
 		<div class="description short">
 			
@@ -211,7 +200,7 @@ operators are surrounded by space before parsing.</p>
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$operators</var></dt>
-					<dd><code><code><a href="class-BN.Expression.Operators.html">BN\Expression\Operators</a></code></code><br>$operators</dd>
+					<dd><code><code><a href="class-BN.Expression.Operator.Operators.html">BN\Expression\Operator\Operators</a></code></code><br>$operators</dd>
 				</dl></div>
 
 
@@ -232,7 +221,7 @@ operators are surrounded by space before parsing.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setVariables">#</a>
-		<code><a href="source-class-BN.Expression.ExpressionEvaluator.html#47-56" title="Go to source code">setVariables</a>( <span>array <var>$variables</var></span> )</code>
+		<code><a href="source-class-BN.Expression.ExpressionEvaluator.html#52-62" title="Go to source code">setVariables</a>( <span>array <var>$variables</var></span> )</code>
 
 		<div class="description short">
 			
@@ -280,7 +269,7 @@ used as variable name and value is used for replacing name during parsing.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_resetVariables">#</a>
-		<code><a href="source-class-BN.Expression.ExpressionEvaluator.html#58-63" title="Go to source code">resetVariables</a>( )</code>
+		<code><a href="source-class-BN.Expression.ExpressionEvaluator.html#64-70" title="Go to source code">resetVariables</a>( )</code>
 
 		<div class="description short">
 			
@@ -313,7 +302,7 @@ used as variable name and value is used for replacing name during parsing.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setBrackets">#</a>
-		<code><a href="source-class-BN.Expression.ExpressionEvaluator.html#65-72" title="Go to source code">setBrackets</a>( <span><code><a href="class-BN.Expression.IBrackets.html">BN\Expression\IBrackets</a></code> <var>$brackets</var></span> )</code>
+		<code><a href="source-class-BN.Expression.ExpressionEvaluator.html#72-80" title="Go to source code">setBrackets</a>( <span><code><a href="class-BN.Expression.Brackets.IBrackets.html">BN\Expression\Brackets\IBrackets</a></code> <var>$brackets</var></span> )</code>
 
 		<div class="description short">
 			
@@ -330,7 +319,7 @@ used as variable name and value is used for replacing name during parsing.</p>
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$brackets</var></dt>
-					<dd><code><code><a href="class-BN.Expression.IBrackets.html">BN\Expression\IBrackets</a></code></code><br>$brackets</dd>
+					<dd><code><code><a href="class-BN.Expression.Brackets.IBrackets.html">BN\Expression\Brackets\IBrackets</a></code></code><br>$brackets</dd>
 				</dl></div>
 
 
@@ -351,7 +340,7 @@ used as variable name and value is used for replacing name during parsing.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_evaluate">#</a>
-		<code><a href="source-class-BN.Expression.ExpressionEvaluator.html#74-89" title="Go to source code">evaluate</a>( <span>string <var>$expression</var></span> )</code>
+		<code><a href="source-class-BN.Expression.ExpressionEvaluator.html#82-99" title="Go to source code">evaluate</a>( <span>string <var>$expression</var></span> )</code>
 
 		<div class="description short">
 			
@@ -384,9 +373,9 @@ spaces around operators is performed only if operators where added via method
 
 				<h4>Throws</h4>
 				<div class="list">
-					<code><code><a href="class-BN.Expression.ParserException.html">BN\Expression\ParserException</a></code></code><br />
-					<code><code><a href="class-BN.Expression.MismatchedBracketException.html">BN\Expression\MismatchedBracketException</a></code></code><br />
-					<code><code><a href="class-BN.Expression.PostfixException.html">BN\Expression\PostfixException</a></code></code><br />
+					<code><code><a href="class-BN.Expression.Exception.ParserException.html">BN\Expression\Exception\ParserException</a></code></code><br />
+					<code><code><a href="class-BN.Expression.Exception.MismatchedBracketException.html">BN\Expression\Exception\MismatchedBracketException</a></code></code><br />
+					<code><code><a href="class-BN.Expression.Exception.PostfixException.html">BN\Expression\Exception\PostfixException</a></code></code><br />
 				</div>
 
 

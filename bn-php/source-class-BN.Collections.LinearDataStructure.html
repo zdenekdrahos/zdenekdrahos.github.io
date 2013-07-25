@@ -5,10 +5,10 @@
 	<meta name="generator" content="ApiGen 2.8.0" />
 	<meta name="robots" content="noindex" />
 
-	<title>File lib/bn-php/expression/collections/LinearDataStructure.php | BN-PHP - Big Number data type for PHP</title>
+	<title>File lib/BN/Collections/LinearDataStructure.php | BN-PHP - Big Number data type for PHP</title>
 
 	<script type="text/javascript" src="resources/combined.js?670845959"></script>
-	<script type="text/javascript" src="elementlist.js?1292720534"></script>
+	<script type="text/javascript" src="elementlist.js?3909941127"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -26,9 +26,17 @@
 						<ul>
 				<li class="active"><a href="namespace-BN.Collections.html">Collections</a>
 						</li>
-				<li><a href="namespace-BN.Expression.html">Expression</a>
+				<li><a href="namespace-BN.Expression.html">Expression<span></span></a>
+						<ul>
+				<li><a href="namespace-BN.Expression.Brackets.html">Brackets</a>
 						</li>
-							</ul></li>
+				<li><a href="namespace-BN.Expression.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-BN.Expression.Operator.html">Operator</a>
+						</li>
+				<li><a href="namespace-BN.Expression.Token.html">Token</a>
+						</li>
+							</ul></li></ul></li>
 				<li><a href="namespace-None.html">None</a>
 						</li>
 			</ul>
@@ -105,37 +113,39 @@
 </span></span><span id="12" class="l"><a class="l" href="#12">12: </a><span class="php-comment"> * object array). It defines basic methods clear, isEmpty, size and protected
 </span></span><span id="13" class="l"><a class="l" href="#13">13: </a><span class="php-comment"> * array for data stored in data structure.
 </span></span><span id="14" class="l"><a class="l" href="#14">14: </a><span class="php-comment"> */</span>
-</span><span id="15" class="l"><a class="l" href="#15">15: </a><span class="php-keyword1">abstract</span> <span class="php-keyword1">class</span> <a id="LinearDataStructure" href="#LinearDataStructure">LinearDataStructure</a> {
-</span><span id="16" class="l"><a class="l" href="#16">16: </a>
+</span><span id="15" class="l"><a class="l" href="#15">15: </a><span class="php-keyword1">abstract</span> <span class="php-keyword1">class</span> <a id="LinearDataStructure" href="#LinearDataStructure">LinearDataStructure</a>
+</span><span id="16" class="l"><a class="l" href="#16">16: </a>{
 </span><span id="17" class="l"><a class="l" href="#17">17: </a>    <span class="php-comment">/** @var array */</span>
 </span><span id="18" class="l"><a class="l" href="#18">18: </a>    <span class="php-keyword1">protected</span> <span class="php-var"><a id="$data" href="#$data">$data</a></span> = <span class="php-keyword1">array</span>();
 </span><span id="19" class="l"><a class="l" href="#19">19: </a>
 </span><span id="20" class="l"><a class="l" href="#20">20: </a>    <span class="php-comment">/**
 </span></span><span id="21" class="l"><a class="l" href="#21">21: </a><span class="php-comment">     * Removes all elements from structure. After clear size is equal to 0
 </span></span><span id="22" class="l"><a class="l" href="#22">22: </a><span class="php-comment">     */</span>
-</span><span id="23" class="l"><a class="l" href="#23">23: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_clear" href="#_clear">clear</a>() {
-</span><span id="24" class="l"><a class="l" href="#24">24: </a>        <span class="php-var">$this</span>-&gt;data = <span class="php-keyword1">array</span>();
-</span><span id="25" class="l"><a class="l" href="#25">25: </a>    }
-</span><span id="26" class="l"><a class="l" href="#26">26: </a>
-</span><span id="27" class="l"><a class="l" href="#27">27: </a>    <span class="php-comment">/** @return boolean */</span>
-</span><span id="28" class="l"><a class="l" href="#28">28: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_isEmpty" href="#_isEmpty">isEmpty</a>() {
-</span><span id="29" class="l"><a class="l" href="#29">29: </a>        <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;size() == <span class="php-num">0</span>;
-</span><span id="30" class="l"><a class="l" href="#30">30: </a>    }
-</span><span id="31" class="l"><a class="l" href="#31">31: </a>
-</span><span id="32" class="l"><a class="l" href="#32">32: </a>    <span class="php-comment">/** @return int */</span>
-</span><span id="33" class="l"><a class="l" href="#33">33: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_size" href="#_size">size</a>() {
-</span><span id="34" class="l"><a class="l" href="#34">34: </a>        <span class="php-keyword1">return</span> <span class="php-keyword2">count</span>(<span class="php-var">$this</span>-&gt;data);
-</span><span id="35" class="l"><a class="l" href="#35">35: </a>    }
-</span><span id="36" class="l"><a class="l" href="#36">36: </a>
-</span><span id="37" class="l"><a class="l" href="#37">37: </a>    <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> <a id="_checkIfElementIsNotNull" href="#_checkIfElementIsNotNull">checkIfElementIsNotNull</a>(<span class="php-var">$element</span>) {
-</span><span id="38" class="l"><a class="l" href="#38">38: </a>        <span class="php-keyword1">if</span> (<span class="php-keyword2">is_null</span>(<span class="php-var">$element</span>)) {
-</span><span id="39" class="l"><a class="l" href="#39">39: </a>            <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> NullArgumentException(<span class="php-quote">'Null inserted into the queue'</span>);
-</span><span id="40" class="l"><a class="l" href="#40">40: </a>        }
-</span><span id="41" class="l"><a class="l" href="#41">41: </a>    }
-</span><span id="42" class="l"><a class="l" href="#42">42: </a>
-</span><span id="43" class="l"><a class="l" href="#43">43: </a>}
-</span><span id="44" class="l"><a class="l" href="#44">44: </a>
-</span><span id="45" class="l"><a class="l" href="#45">45: </a></span><span class="xlang">?&gt;</span></code></pre>
+</span><span id="23" class="l"><a class="l" href="#23">23: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_clear" href="#_clear">clear</a>()
+</span><span id="24" class="l"><a class="l" href="#24">24: </a>    {
+</span><span id="25" class="l"><a class="l" href="#25">25: </a>        <span class="php-var">$this</span>-&gt;data = <span class="php-keyword1">array</span>();
+</span><span id="26" class="l"><a class="l" href="#26">26: </a>    }
+</span><span id="27" class="l"><a class="l" href="#27">27: </a>
+</span><span id="28" class="l"><a class="l" href="#28">28: </a>    <span class="php-comment">/** @return boolean */</span>
+</span><span id="29" class="l"><a class="l" href="#29">29: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_isEmpty" href="#_isEmpty">isEmpty</a>()
+</span><span id="30" class="l"><a class="l" href="#30">30: </a>    {
+</span><span id="31" class="l"><a class="l" href="#31">31: </a>        <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;size() == <span class="php-num">0</span>;
+</span><span id="32" class="l"><a class="l" href="#32">32: </a>    }
+</span><span id="33" class="l"><a class="l" href="#33">33: </a>
+</span><span id="34" class="l"><a class="l" href="#34">34: </a>    <span class="php-comment">/** @return int */</span>
+</span><span id="35" class="l"><a class="l" href="#35">35: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_size" href="#_size">size</a>()
+</span><span id="36" class="l"><a class="l" href="#36">36: </a>    {
+</span><span id="37" class="l"><a class="l" href="#37">37: </a>        <span class="php-keyword1">return</span> <span class="php-keyword2">count</span>(<span class="php-var">$this</span>-&gt;data);
+</span><span id="38" class="l"><a class="l" href="#38">38: </a>    }
+</span><span id="39" class="l"><a class="l" href="#39">39: </a>
+</span><span id="40" class="l"><a class="l" href="#40">40: </a>    <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> <a id="_checkIfElementIsNotNull" href="#_checkIfElementIsNotNull">checkIfElementIsNotNull</a>(<span class="php-var">$element</span>)
+</span><span id="41" class="l"><a class="l" href="#41">41: </a>    {
+</span><span id="42" class="l"><a class="l" href="#42">42: </a>        <span class="php-keyword1">if</span> (<span class="php-keyword2">is_null</span>(<span class="php-var">$element</span>)) {
+</span><span id="43" class="l"><a class="l" href="#43">43: </a>            <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> NullArgumentException(<span class="php-quote">'Null inserted into the queue'</span>);
+</span><span id="44" class="l"><a class="l" href="#44">44: </a>        }
+</span><span id="45" class="l"><a class="l" href="#45">45: </a>    }
+</span><span id="46" class="l"><a class="l" href="#46">46: </a>}
+</span><span id="47" class="l"><a class="l" href="#47">47: </a></span></code></pre>
 
 	<div id="footer">
 		BN-PHP - Big Number data type for PHP API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>

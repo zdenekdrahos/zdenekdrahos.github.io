@@ -7,7 +7,7 @@
 	<title>Class BN\Number | BN-PHP - Big Number data type for PHP</title>
 
 	<script type="text/javascript" src="resources/combined.js?670845959"></script>
-	<script type="text/javascript" src="elementlist.js?1292720534"></script>
+	<script type="text/javascript" src="elementlist.js?3909941127"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -25,9 +25,17 @@
 						<ul>
 				<li><a href="namespace-BN.Collections.html">Collections</a>
 						</li>
-				<li><a href="namespace-BN.Expression.html">Expression</a>
+				<li><a href="namespace-BN.Expression.html">Expression<span></span></a>
+						<ul>
+				<li><a href="namespace-BN.Expression.Brackets.html">Brackets</a>
 						</li>
-							</ul></li>
+				<li><a href="namespace-BN.Expression.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-BN.Expression.Operator.html">Operator</a>
+						</li>
+				<li><a href="namespace-BN.Expression.Token.html">Token</a>
+						</li>
+							</ul></li></ul></li>
 				<li><a href="namespace-None.html">None</a>
 						</li>
 			</ul>
@@ -122,7 +130,7 @@ inner representation of number is a string.</p>
 		<b>Namespace:</b> <a href="namespace-BN.html">BN</a><br />
 		
 
-		<b>Located at</b> <a href="source-class-BN.Number.html#10-290" title="Go to source code">lib/bn-php/number/Number.php</a><br />
+		<b>Located at</b> <a href="source-class-BN.Number.html#10-350" title="Go to source code">lib/BN/Number.php</a><br />
 	</div>
 
 
@@ -140,7 +148,7 @@ inner representation of number is a string.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-BN.Number.html#22-31" title="Go to source code">__construct</a>( <span>string <var>$number</var> = <span class="php-quote">'0'</span></span> )</code>
+		<code><a href="source-class-BN.Number.html#22-32" title="Go to source code">__construct</a>( <span>string <var>$number</var> = <span class="php-quote">'0'</span></span> )</code>
 
 		<div class="description short">
 			
@@ -184,7 +192,7 @@ scale).</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_add">#</a>
-		<code><a href="source-class-BN.Number.html#33-35" title="Go to source code">add</a>( <span><code><a href="class-BN.INumber.html">BN\INumber</a></code> <var>$number</var></span> )</code>
+		<code><a href="source-class-BN.Number.html#34-37" title="Go to source code">add</a>( <span><code><a href="class-BN.INumber.html">BN\INumber</a></code> <var>$number</var></span> )</code>
 
 		<div class="description short">
 			
@@ -228,7 +236,7 @@ scale).</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_subtract">#</a>
-		<code><a href="source-class-BN.Number.html#37-39" title="Go to source code">subtract</a>( <span><code><a href="class-BN.INumber.html">BN\INumber</a></code> <var>$number</var></span> )</code>
+		<code><a href="source-class-BN.Number.html#39-42" title="Go to source code">subtract</a>( <span><code><a href="class-BN.INumber.html">BN\INumber</a></code> <var>$number</var></span> )</code>
 
 		<div class="description short">
 			
@@ -272,7 +280,7 @@ scale).</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_multiply">#</a>
-		<code><a href="source-class-BN.Number.html#41-43" title="Go to source code">multiply</a>( <span><code><a href="class-BN.INumber.html">BN\INumber</a></code> <var>$number</var></span> )</code>
+		<code><a href="source-class-BN.Number.html#44-47" title="Go to source code">multiply</a>( <span><code><a href="class-BN.INumber.html">BN\INumber</a></code> <var>$number</var></span> )</code>
 
 		<div class="description short">
 			
@@ -316,7 +324,7 @@ scale).</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_divide">#</a>
-		<code><a href="source-class-BN.Number.html#45-48" title="Go to source code">divide</a>( <span><code><a href="class-BN.INumber.html">BN\INumber</a></code> <var>$number</var></span> )</code>
+		<code><a href="source-class-BN.Number.html#49-54" title="Go to source code">divide</a>( <span><code><a href="class-BN.INumber.html">BN\INumber</a></code> <var>$number</var></span> )</code>
 
 		<div class="description short">
 			
@@ -368,7 +376,7 @@ scale).</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_quotient">#</a>
-		<code><a href="source-class-BN.Number.html#50-52" title="Go to source code">quotient</a>( <span><code><a href="class-BN.INumber.html">BN\INumber</a></code> <var>$number</var></span> )</code>
+		<code><a href="source-class-BN.Number.html#56-59" title="Go to source code">quotient</a>( <span><code><a href="class-BN.INumber.html">BN\INumber</a></code> <var>$number</var></span> )</code>
 
 		<div class="description short">
 			
@@ -420,7 +428,7 @@ remainder.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_modulo">#</a>
-		<code><a href="source-class-BN.Number.html#54-60" title="Go to source code">modulo</a>( <span><code><a href="class-BN.INumber.html">BN\INumber</a></code> <var>$number</var></span> )</code>
+		<code><a href="source-class-BN.Number.html#61-69" title="Go to source code">modulo</a>( <span><code><a href="class-BN.INumber.html">BN\INumber</a></code> <var>$number</var></span> )</code>
 
 		<div class="description short">
 			
@@ -479,7 +487,7 @@ floor(x/n)). See the rules in examples:</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_power">#</a>
-		<code><a href="source-class-BN.Number.html#67-74" title="Go to source code">power</a>( <span><code><a href="class-BN.INumber.html">BN\INumber</a></code> <var>$number</var></span> )</code>
+		<code><a href="source-class-BN.Number.html#78-87" title="Go to source code">power</a>( <span><code><a href="class-BN.INumber.html">BN\INumber</a></code> <var>$number</var></span> )</code>
 
 		<div class="description short">
 			
@@ -529,7 +537,7 @@ floating point precision.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_sqrt">#</a>
-		<code><a href="source-class-BN.Number.html#81-85" title="Go to source code">sqrt</a>( )</code>
+		<code><a href="source-class-BN.Number.html#95-101" title="Go to source code">sqrt</a>( )</code>
 
 		<div class="description short">
 			
@@ -572,7 +580,7 @@ floating point precision.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_abs">#</a>
-		<code><a href="source-class-BN.Number.html#87-91" title="Go to source code">abs</a>( )</code>
+		<code><a href="source-class-BN.Number.html#103-109" title="Go to source code">abs</a>( )</code>
 
 		<div class="description short">
 			
@@ -611,7 +619,7 @@ floating point precision.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_negate">#</a>
-		<code><a href="source-class-BN.Number.html#93-95" title="Go to source code">negate</a>( )</code>
+		<code><a href="source-class-BN.Number.html#111-114" title="Go to source code">negate</a>( )</code>
 
 		<div class="description short">
 			
@@ -650,7 +658,7 @@ floating point precision.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isInteger">#</a>
-		<code><a href="source-class-BN.Number.html#97-101" title="Go to source code">isInteger</a>( )</code>
+		<code><a href="source-class-BN.Number.html#116-121" title="Go to source code">isInteger</a>( )</code>
 
 		<div class="description short">
 			
@@ -691,7 +699,7 @@ decimal point or if numbers after decimal points are zeros.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isZero">#</a>
-		<code><a href="source-class-BN.Number.html#107-109" title="Go to source code">isZero</a>( )</code>
+		<code><a href="source-class-BN.Number.html#128-131" title="Go to source code">isZero</a>( )</code>
 
 		<div class="description short">
 			
@@ -730,7 +738,7 @@ decimal point or if numbers after decimal points are zeros.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isNegative">#</a>
-		<code><a href="source-class-BN.Number.html#111-113" title="Go to source code">isNegative</a>( )</code>
+		<code><a href="source-class-BN.Number.html#133-136" title="Go to source code">isNegative</a>( )</code>
 
 		<div class="description short">
 			
@@ -769,7 +777,7 @@ decimal point or if numbers after decimal points are zeros.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isPositive">#</a>
-		<code><a href="source-class-BN.Number.html#115-117" title="Go to source code">isPositive</a>( )</code>
+		<code><a href="source-class-BN.Number.html#138-141" title="Go to source code">isPositive</a>( )</code>
 
 		<div class="description short">
 			
@@ -808,7 +816,7 @@ decimal point or if numbers after decimal points are zeros.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_compare">#</a>
-		<code><a href="source-class-BN.Number.html#119-121" title="Go to source code">compare</a>( <span><code><a href="class-BN.INumber.html">BN\INumber</a></code> <var>$number</var></span> )</code>
+		<code><a href="source-class-BN.Number.html#143-146" title="Go to source code">compare</a>( <span><code><a href="class-BN.INumber.html">BN\INumber</a></code> <var>$number</var></span> )</code>
 
 		<div class="description short">
 			
@@ -854,7 +862,7 @@ instance is larger than argument it returns 1. Otherwise returns -1.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isEqual">#</a>
-		<code><a href="source-class-BN.Number.html#123-125" title="Go to source code">isEqual</a>( <span><code><a href="class-BN.INumber.html">BN\INumber</a></code> <var>$number</var></span> )</code>
+		<code><a href="source-class-BN.Number.html#148-151" title="Go to source code">isEqual</a>( <span><code><a href="class-BN.INumber.html">BN\INumber</a></code> <var>$number</var></span> )</code>
 
 		<div class="description short">
 			
@@ -898,7 +906,7 @@ instance is larger than argument it returns 1. Otherwise returns -1.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isBiggerThan">#</a>
-		<code><a href="source-class-BN.Number.html#127-129" title="Go to source code">isBiggerThan</a>( <span><code><a href="class-BN.INumber.html">BN\INumber</a></code> <var>$number</var></span> )</code>
+		<code><a href="source-class-BN.Number.html#153-156" title="Go to source code">isBiggerThan</a>( <span><code><a href="class-BN.INumber.html">BN\INumber</a></code> <var>$number</var></span> )</code>
 
 		<div class="description short">
 			
@@ -942,7 +950,7 @@ instance is larger than argument it returns 1. Otherwise returns -1.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isSmallerThan">#</a>
-		<code><a href="source-class-BN.Number.html#131-133" title="Go to source code">isSmallerThan</a>( <span><code><a href="class-BN.INumber.html">BN\INumber</a></code> <var>$number</var></span> )</code>
+		<code><a href="source-class-BN.Number.html#158-161" title="Go to source code">isSmallerThan</a>( <span><code><a href="class-BN.INumber.html">BN\INumber</a></code> <var>$number</var></span> )</code>
 
 		<div class="description short">
 			
@@ -986,7 +994,7 @@ instance is larger than argument it returns 1. Otherwise returns -1.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_round">#</a>
-		<code><a href="source-class-BN.Number.html#135-141" title="Go to source code">round</a>( <span>integer <var>$precision</var></span> )</code>
+		<code><a href="source-class-BN.Number.html#163-171" title="Go to source code">round</a>( <span>integer <var>$precision</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1043,7 +1051,7 @@ point.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_roundUp">#</a>
-		<code><a href="source-class-BN.Number.html#160-164" title="Go to source code">roundUp</a>( )</code>
+		<code><a href="source-class-BN.Number.html#192-198" title="Go to source code">roundUp</a>( )</code>
 
 		<div class="description short">
 			
@@ -1089,7 +1097,7 @@ fractions up.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_roundDown">#</a>
-		<code><a href="source-class-BN.Number.html#172-179" title="Go to source code">roundDown</a>( )</code>
+		<code><a href="source-class-BN.Number.html#207-216" title="Go to source code">roundDown</a>( )</code>
 
 		<div class="description short">
 			
@@ -1135,7 +1143,7 @@ fractions down.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_roundToNumber">#</a>
-		<code><a href="source-class-BN.Number.html#190-199" title="Go to source code">roundToNumber</a>( <span>integer <var>$precision</var></span> )</code>
+		<code><a href="source-class-BN.Number.html#229-240" title="Go to source code">roundToNumber</a>( <span>integer <var>$precision</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1192,7 +1200,7 @@ number of digits in precision.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setLocalScale">#</a>
-		<code><a href="source-class-BN.Number.html#226-229" title="Go to source code">setLocalScale</a>( <span>integer <var>$scale</var></span> )</code>
+		<code><a href="source-class-BN.Number.html#270-274" title="Go to source code">setLocalScale</a>( <span>integer <var>$scale</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1242,7 +1250,7 @@ because they are creating temporary numbers without local scale.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_resetLocalScale">#</a>
-		<code><a href="source-class-BN.Number.html#231-233" title="Go to source code">resetLocalScale</a>( )</code>
+		<code><a href="source-class-BN.Number.html#276-279" title="Go to source code">resetLocalScale</a>( )</code>
 
 		<div class="description short">
 			
@@ -1279,7 +1287,7 @@ BC Math global scale is defined by function bcscale.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#___toString">#</a>
-		<code><a href="source-class-BN.Number.html#235-237" title="Go to source code">__toString</a>( )</code>
+		<code><a href="source-class-BN.Number.html#281-284" title="Go to source code">__toString</a>( )</code>
 
 		<div class="description short">
 			
@@ -1318,7 +1326,7 @@ BC Math global scale is defined by function bcscale.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#___clone">#</a>
-		<code><a href="source-class-BN.Number.html#239-241" title="Go to source code">__clone</a>( )</code>
+		<code><a href="source-class-BN.Number.html#286-289" title="Go to source code">__clone</a>( )</code>
 
 		<div class="description short">
 			
