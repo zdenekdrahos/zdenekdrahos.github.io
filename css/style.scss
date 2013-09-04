@@ -2,7 +2,8 @@
 $background: #fff;
 $backgroundDark: #000;
 $backgroundLight: #eee;
-
+// social networs
+$opacity: 0.8;
 
 body {
     font-family: Arial, sans-serif;
@@ -13,7 +14,8 @@ body {
     text-align: left;
 }
 
-header h1, #content {
+header div, #content {
+    position: relative;
     min-width: 380px;
     max-width: 960px;
     width: 90%;
@@ -24,6 +26,9 @@ header h1, #content {
 a {    
     color: #006;
     text-decoration: underline;
+    img {
+        border: 0;
+    }
 }
 a:hover, a:focus {
     background: #eee;
@@ -32,11 +37,11 @@ a:hover, a:focus {
 
 header {
     background: $backgroundDark;
-    
     h1 {
         color: #ddd;
         font-size: 50px;
-        padding: 20px;
+        padding: 20px 0;
+        margin: 0;
         a {
             color: #fff;
             text-decoration: none;
@@ -49,6 +54,20 @@ header {
         em {
             font-size: 20px;
             display: block;
+        }
+    }    
+    #socials {
+        position: absolute;
+        top: 40px;
+        right: 20px;
+        a {
+            opacity: $opacity;
+            filter: alpha(opacity=$opacity*100); // msie
+            &:hover, &:focus {                
+                background: transparent;
+                opacity: 1;
+                filter: alpha(opacity=100);
+            }
         }
     }
 }
