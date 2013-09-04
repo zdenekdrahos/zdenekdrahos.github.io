@@ -1,3 +1,5 @@
 syntax: glob
 nbproject/**
 templates/**
+css/style.css
+css/ie.css
