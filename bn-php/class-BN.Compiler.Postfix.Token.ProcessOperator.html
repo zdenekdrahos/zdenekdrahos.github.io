@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class BN\Compiler\Postfix\Token\ProcessOperator | BN-PHP - Big Number data type for PHP</title>
+
+	<script type="text/javascript" src="resources/combined.js?670845959"></script>
+	<script type="text/javascript" src="elementlist.js?1607198991"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-BN.html">BN<span></span></a>
+						<ul>
+				<li><a href="namespace-BN.Collections.html">Collections</a>
+						</li>
+				<li class="active"><a href="namespace-BN.Compiler.html">Compiler<span></span></a>
+						<ul>
+				<li><a href="namespace-BN.Compiler.Grammar.html">Grammar</a>
+						</li>
+				<li><a href="namespace-BN.Compiler.Parser.html">Parser<span></span></a>
+						<ul>
+				<li><a href="namespace-BN.Compiler.Parser.Operator.html">Operator</a>
+						</li>
+				<li><a href="namespace-BN.Compiler.Parser.Token.html">Token</a>
+						</li>
+							</ul></li>
+				<li class="active"><a href="namespace-BN.Compiler.Postfix.html">Postfix<span></span></a>
+						<ul>
+				<li><a href="namespace-BN.Compiler.Postfix.Operands.html">Operands</a>
+						</li>
+				<li><a href="namespace-BN.Compiler.Postfix.Operator.html">Operator</a>
+						</li>
+				<li class="active"><a href="namespace-BN.Compiler.Postfix.Token.html">Token</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-BN.Compiler.Scanner.html">Scanner<span></span></a>
+						<ul>
+				<li><a href="namespace-BN.Compiler.Scanner.Converter.html">Converter</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-BN.Compiler.Token.html">Token</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Demo.html">Demo</a>
+						</li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-BN.Compiler.Postfix.Token.ProcessAssign.html">ProcessAssign</a></li>
+				<li><a href="class-BN.Compiler.Postfix.Token.ProcessConstant.html">ProcessConstant</a></li>
+				<li><a href="class-BN.Compiler.Postfix.Token.ProcessKeyword.html">ProcessKeyword</a></li>
+				<li class="active"><a href="class-BN.Compiler.Postfix.Token.ProcessOperator.html">ProcessOperator</a></li>
+				<li><a href="class-BN.Compiler.Postfix.Token.ProcessUnknown.html">ProcessUnknown</a></li>
+				<li><a href="class-BN.Compiler.Postfix.Token.ProcessValue.html">ProcessValue</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-BN.Compiler.Postfix.Token.ProcessKeywordStrategy.html">ProcessKeywordStrategy</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-BN.Compiler.Postfix.Token.html" title="Summary of BN\Compiler\Postfix\Token"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class ProcessOperator</h1>
+
+
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-BN.Compiler.Postfix.ProcessToken.html"><span>BN\Compiler\Postfix\ProcessToken</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b><span>BN\Compiler\Postfix\Token\ProcessOperator</span></b>			
+			 implements 
+				<a href="class-BN.Compiler.Postfix.Token.ProcessKeywordStrategy.html"><span>BN\Compiler\Postfix\Token\ProcessKeywordStrategy</span></a>
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-BN.html">BN</a>\<a href="namespace-BN.Compiler.html">Compiler</a>\<a href="namespace-BN.Compiler.Postfix.html">Postfix</a>\<a href="namespace-BN.Compiler.Postfix.Token.html">Token</a><br />
+		
+
+		<b>Located at</b> <a href="source-class-BN.Compiler.Postfix.Token.ProcessOperator.html#10-56" title="Go to source code">lib/BN/Compiler/Postfix/Token/ProcessOperator.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-BN.Compiler.Postfix.Token.ProcessOperator.html#16-21" title="Go to source code">__construct</a>( <span>mixed <var>$accumulator</var></span>, <span><code><a href="class-BN.Compiler.Grammar.Operators.html">BN\Compiler\Grammar\Operators</a></code> <var>$operators</var></span>, <span><code><a href="class-BN.Compiler.Postfix.Variables.html">BN\Compiler\Postfix\Variables</a></code> <var>$variables</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-BN.Compiler.Postfix.ProcessToken.html#___construct">BN\Compiler\Postfix\ProcessToken::__construct()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="process" id="_process">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_process">#</a>
+		<code><a href="source-class-BN.Compiler.Postfix.Token.ProcessOperator.html#23-31" title="Go to source code">process</a>( <span><code><a href="class-BN.Compiler.Token.Token.html">BN\Compiler\Token\Token</a></code> <var>$token</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isFirstOperandVariable" id="_isFirstOperandVariable">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isFirstOperandVariable">#</a>
+		<code><a href="source-class-BN.Compiler.Postfix.Token.ProcessOperator.html#33-36" title="Go to source code">isFirstOperandVariable</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BN.Compiler.Postfix.Token.ProcessKeywordStrategy.html#_isFirstOperandVariable">BN\Compiler\Postfix\Token\ProcessKeywordStrategy::isFirstOperandVariable()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getOperands" id="_getOperands">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getOperands">#</a>
+		<code><a href="source-class-BN.Compiler.Postfix.Token.ProcessOperator.html#38-41" title="Go to source code">getOperands</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BN.Compiler.Postfix.Token.ProcessKeywordStrategy.html#_getOperands">BN\Compiler\Postfix\Token\ProcessKeywordStrategy::getOperands()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="tokensToOperands" id="_tokensToOperands">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_tokensToOperands">#</a>
+		<code><a href="source-class-BN.Compiler.Postfix.Token.ProcessOperator.html#43-50" title="Go to source code">tokensToOperands</a>( <span>array <var>$tokens</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BN.Compiler.Postfix.Token.ProcessKeywordStrategy.html#_tokensToOperands">BN\Compiler\Postfix\Token\ProcessKeywordStrategy::tokensToOperands()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getEvaluator" id="_getEvaluator">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getEvaluator">#</a>
+		<code><a href="source-class-BN.Compiler.Postfix.Token.ProcessOperator.html#52-55" title="Go to source code">getEvaluator</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BN.Compiler.Postfix.Token.ProcessKeywordStrategy.html#_getEvaluator">BN\Compiler\Postfix\Token\ProcessKeywordStrategy::getEvaluator()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		BN-PHP - Big Number data type for PHP API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

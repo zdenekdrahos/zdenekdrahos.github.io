@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Tree | BN-PHP - Big Number data type for PHP</title>
+
+	<script type="text/javascript" src="resources/combined.js?670845959"></script>
+	<script type="text/javascript" src="elementlist.js?1607198991"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-BN.html">BN<span></span></a>
+						<ul>
+				<li><a href="namespace-BN.Collections.html">Collections</a>
+						</li>
+				<li><a href="namespace-BN.Compiler.html">Compiler<span></span></a>
+						<ul>
+				<li><a href="namespace-BN.Compiler.Grammar.html">Grammar</a>
+						</li>
+				<li><a href="namespace-BN.Compiler.Parser.html">Parser<span></span></a>
+						<ul>
+				<li><a href="namespace-BN.Compiler.Parser.Operator.html">Operator</a>
+						</li>
+				<li><a href="namespace-BN.Compiler.Parser.Token.html">Token</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-BN.Compiler.Postfix.html">Postfix<span></span></a>
+						<ul>
+				<li><a href="namespace-BN.Compiler.Postfix.Operands.html">Operands</a>
+						</li>
+				<li><a href="namespace-BN.Compiler.Postfix.Operator.html">Operator</a>
+						</li>
+				<li><a href="namespace-BN.Compiler.Postfix.Token.html">Token</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-BN.Compiler.Scanner.html">Scanner<span></span></a>
+						<ul>
+				<li><a href="namespace-BN.Compiler.Scanner.Converter.html">Converter</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-BN.Compiler.Token.html">Token</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Demo.html">Demo</a>
+						</li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-BN.AggregateFunctions.html">BN\AggregateFunctions</a></li>
+				<li><a href="class-BN.Collections.LinearDataStructure.html">BN\Collections\LinearDataStructure</a></li>
+				<li><a href="class-BN.Collections.Queue.html">BN\Collections\Queue</a></li>
+				<li><a href="class-BN.Collections.Stack.html">BN\Collections\Stack</a></li>
+				<li><a href="class-BN.Compiler.EvaluatorInteractor.html">BN\Compiler\EvaluatorInteractor</a></li>
+				<li><a href="class-BN.Compiler.Grammar.GrammarBuilder.html">BN\Compiler\Grammar\GrammarBuilder</a></li>
+				<li><a href="class-BN.Compiler.Grammar.OperatorBuilder.html">BN\Compiler\Grammar\OperatorBuilder</a></li>
+				<li><a href="class-BN.Compiler.Grammar.Operators.html">BN\Compiler\Grammar\Operators</a></li>
+				<li><a href="class-BN.Compiler.Parser.Operator.OperatorOrder.html">BN\Compiler\Parser\Operator\OperatorOrder</a></li>
+				<li><a href="class-BN.Compiler.Parser.QueueAccumulator.html">BN\Compiler\Parser\QueueAccumulator</a></li>
+				<li><a href="class-BN.Compiler.Parser.ShuntingYardParser.html">BN\Compiler\Parser\ShuntingYardParser</a></li>
+				<li><a href="class-BN.Compiler.Parser.StackCleaning.html">BN\Compiler\Parser\StackCleaning</a></li>
+				<li><a href="class-BN.Compiler.Parser.Token.ParseClosingBracket.html">BN\Compiler\Parser\Token\ParseClosingBracket</a></li>
+				<li><a href="class-BN.Compiler.Parser.Token.ParseOpeningBracket.html">BN\Compiler\Parser\Token\ParseOpeningBracket</a></li>
+				<li><a href="class-BN.Compiler.Parser.Token.ParseOperator.html">BN\Compiler\Parser\Token\ParseOperator</a></li>
+				<li><a href="class-BN.Compiler.Parser.Token.ParseUnknownToken.html">BN\Compiler\Parser\Token\ParseUnknownToken</a></li>
+				<li><a href="class-BN.Compiler.Parser.Token.ParseValue.html">BN\Compiler\Parser\Token\ParseValue</a></li>
+				<li><a href="class-BN.Compiler.Parser.TokenParser.html">BN\Compiler\Parser\TokenParser</a></li>
+				<li><a href="class-BN.Compiler.Postfix.Operands.AtLeastN.html">BN\Compiler\Postfix\Operands\AtLeastN</a></li>
+				<li><a href="class-BN.Compiler.Postfix.Operands.FixedCount.html">BN\Compiler\Postfix\Operands\FixedCount</a></li>
+				<li><a href="class-BN.Compiler.Postfix.Operands.Operands.html">BN\Compiler\Postfix\Operands\Operands</a></li>
+				<li><a href="class-BN.Compiler.Postfix.Operands.OperandsSummary.html">BN\Compiler\Postfix\Operands\OperandsSummary</a></li>
+				<li><a href="class-BN.Compiler.Postfix.Operator.AssignOperator.html">BN\Compiler\Postfix\Operator\AssignOperator</a></li>
+				<li><a href="class-BN.Compiler.Postfix.Operator.CallbackEvaluator.html">BN\Compiler\Postfix\Operator\CallbackEvaluator</a></li>
+				<li><a href="class-BN.Compiler.Postfix.PostfixEvaluator.html">BN\Compiler\Postfix\PostfixEvaluator</a></li>
+				<li><a href="class-BN.Compiler.Postfix.ProcessToken.html">BN\Compiler\Postfix\ProcessToken</a></li>
+				<li><a href="class-BN.Compiler.Postfix.StackAccumulator.html">BN\Compiler\Postfix\StackAccumulator</a></li>
+				<li><a href="class-BN.Compiler.Postfix.Token.ProcessAssign.html">BN\Compiler\Postfix\Token\ProcessAssign</a></li>
+				<li><a href="class-BN.Compiler.Postfix.Token.ProcessConstant.html">BN\Compiler\Postfix\Token\ProcessConstant</a></li>
+				<li><a href="class-BN.Compiler.Postfix.Token.ProcessKeyword.html">BN\Compiler\Postfix\Token\ProcessKeyword</a></li>
+				<li><a href="class-BN.Compiler.Postfix.Token.ProcessOperator.html">BN\Compiler\Postfix\Token\ProcessOperator</a></li>
+				<li><a href="class-BN.Compiler.Postfix.Token.ProcessUnknown.html">BN\Compiler\Postfix\Token\ProcessUnknown</a></li>
+				<li><a href="class-BN.Compiler.Postfix.Token.ProcessValue.html">BN\Compiler\Postfix\Token\ProcessValue</a></li>
+				<li><a href="class-BN.Compiler.Postfix.Variables.html">BN\Compiler\Postfix\Variables</a></li>
+				<li><a href="class-BN.Compiler.ResponderDecorator.html">BN\Compiler\ResponderDecorator</a></li>
+				<li><a href="class-BN.Compiler.Scanner.Converter.LexemeToAssign.html">BN\Compiler\Scanner\Converter\LexemeToAssign</a></li>
+				<li><a href="class-BN.Compiler.Scanner.Converter.LexemeToBNNumber.html">BN\Compiler\Scanner\Converter\LexemeToBNNumber</a></li>
+				<li><a href="class-BN.Compiler.Scanner.Converter.LexemeToConstant.html">BN\Compiler\Scanner\Converter\LexemeToConstant</a></li>
+				<li><a href="class-BN.Compiler.Scanner.Converter.LexemeToKeyword.html">BN\Compiler\Scanner\Converter\LexemeToKeyword</a></li>
+				<li><a href="class-BN.Compiler.Scanner.Converter.LexemeToSignedNumber.html">BN\Compiler\Scanner\Converter\LexemeToSignedNumber</a></li>
+				<li><a href="class-BN.Compiler.Scanner.Converter.LexemeToUnknown.html">BN\Compiler\Scanner\Converter\LexemeToUnknown</a></li>
+				<li><a href="class-BN.Compiler.Scanner.Converter.LexemeToUnsignedNumber.html">BN\Compiler\Scanner\Converter\LexemeToUnsignedNumber</a></li>
+				<li><a href="class-BN.Compiler.Scanner.Converter.LexemeToVariable.html">BN\Compiler\Scanner\Converter\LexemeToVariable</a></li>
+				<li><a href="class-BN.Compiler.Scanner.LexemeToToken.html">BN\Compiler\Scanner\LexemeToToken</a></li>
+				<li><a href="class-BN.Compiler.Scanner.LexemeToTokens.html">BN\Compiler\Scanner\LexemeToTokens</a></li>
+				<li><a href="class-BN.Compiler.Scanner.Scanner.html">BN\Compiler\Scanner\Scanner</a></li>
+				<li><a href="class-BN.Compiler.Scanner.Statement.html">BN\Compiler\Scanner\Statement</a></li>
+				<li><a href="class-BN.Compiler.Scanner.UnarySignsScanner.html">BN\Compiler\Scanner\UnarySignsScanner</a></li>
+				<li><a href="class-BN.Compiler.Token.Token.html">BN\Compiler\Token\Token</a></li>
+				<li><a href="class-BN.Compiler.Token.TokenType.html">BN\Compiler\Token\TokenType</a></li>
+				<li><a href="class-BN.Number.html">BN\Number</a></li>
+				<li><a href="class-BN.NumberFactory.html">BN\NumberFactory</a></li>
+				<li><a href="class-BN.OperatorsFactory.html">BN\OperatorsFactory</a></li>
+				<li><a href="class-Demo.Benchmark.html">Demo\Benchmark</a></li>
+				<li><a href="class-Demo.Controller.html">Demo\Controller</a></li>
+				<li><a href="class-Demo.GrammarDecorator.html">Demo\GrammarDecorator</a></li>
+				<li><a href="class-Demo.Model.html">Demo\Model</a></li>
+				<li><a href="class-Demo.NativeEval.html">Demo\NativeEval</a></li>
+				<li><a href="class-Demo.Presenter.html">Demo\Presenter</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-BN.Compiler.EvaluatorResponder.html">BN\Compiler\EvaluatorResponder</a></li>
+				<li><a href="class-BN.Compiler.Parser.ParserErrorHandler.html">BN\Compiler\Parser\ParserErrorHandler</a></li>
+				<li><a href="class-BN.Compiler.Postfix.CalculatorErrorHandler.html">BN\Compiler\Postfix\CalculatorErrorHandler</a></li>
+				<li><a href="class-BN.Compiler.Postfix.Operator.OperatorEvaluator.html">BN\Compiler\Postfix\Operator\OperatorEvaluator</a></li>
+				<li><a href="class-BN.Compiler.Postfix.Token.ProcessKeywordStrategy.html">BN\Compiler\Postfix\Token\ProcessKeywordStrategy</a></li>
+				<li><a href="class-BN.Compiler.Scanner.LexemeConverter.html">BN\Compiler\Scanner\LexemeConverter</a></li>
+				<li><a href="class-BN.INumber.html">BN\INumber</a></li>
+			</ul>
+
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-BN.Collections.NullArgumentException.html">BN\Collections\NullArgumentException</a></li>
+			</ul>
+
+
+			<h3>Functions</h3>
+			<ul>
+				<li><a href="function-bnPhpAutoload.html">bnPhpAutoload</a></li>
+				<li><a href="function-Demo.examples.html">Demo\examples</a></li>
+				<li><a href="function-Demo.expressionsToLines.html">Demo\expressionsToLines</a></li>
+				<li><a href="function-Demo.grammar.html">Demo\grammar</a></li>
+				<li><a href="function-Demo.transformVars.html">Demo\transformVars</a></li>
+				<li><a href="function-operator.html">operator</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+<span>Namespace</span>			</li>
+			<li>
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li class="active">
+<span>Tree</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content">
+	<h1>Tree</h1>
+
+		<h3>Classes</h3>
+<div class="tree">
+	<ul>
+
+			<li><div class="notlast"><a href="class-BN.AggregateFunctions.html"><span>BN\AggregateFunctions</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BN.Collections.LinearDataStructure.html"><span>BN\Collections\LinearDataStructure</span></a>
+			
+			
+			</div>
+
+				<ul>
+
+			<li><div class="notlast"><a href="class-BN.Collections.Queue.html"><span>BN\Collections\Queue</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li class="last"><div class="last"><a href="class-BN.Collections.Stack.html"><span>BN\Collections\Stack</span></a>
+			
+			
+			</div>
+
+				</ul></li>
+
+			<li><div class="notlast"><a href="class-BN.Compiler.EvaluatorInteractor.html"><span>BN\Compiler\EvaluatorInteractor</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BN.Compiler.Grammar.GrammarBuilder.html"><span>BN\Compiler\Grammar\GrammarBuilder</span></a>
+			
+			
+			</div>
+
+				<ul>
+
+			<li class="last"><div class="last"><a href="class-Demo.GrammarDecorator.html"><span>Demo\GrammarDecorator</span></a>
+			
+			
+			</div>
+
+				</ul></li>
+
+			<li><div class="notlast"><a href="class-BN.Compiler.Grammar.OperatorBuilder.html"><span>BN\Compiler\Grammar\OperatorBuilder</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BN.Compiler.Grammar.Operators.html"><span>BN\Compiler\Grammar\Operators</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BN.Compiler.Parser.Operator.OperatorOrder.html"><span>BN\Compiler\Parser\Operator\OperatorOrder</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BN.Compiler.Parser.QueueAccumulator.html"><span>BN\Compiler\Parser\QueueAccumulator</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BN.Compiler.Parser.ShuntingYardParser.html"><span>BN\Compiler\Parser\ShuntingYardParser</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BN.Compiler.Parser.StackCleaning.html"><span>BN\Compiler\Parser\StackCleaning</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BN.Compiler.Parser.TokenParser.html"><span>BN\Compiler\Parser\TokenParser</span></a>
+			
+			
+			</div>
+
+				<ul>
+
+			<li><div class="notlast"><a href="class-BN.Compiler.Parser.Token.ParseClosingBracket.html"><span>BN\Compiler\Parser\Token\ParseClosingBracket</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BN.Compiler.Parser.Token.ParseOpeningBracket.html"><span>BN\Compiler\Parser\Token\ParseOpeningBracket</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BN.Compiler.Parser.Token.ParseOperator.html"><span>BN\Compiler\Parser\Token\ParseOperator</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BN.Compiler.Parser.Token.ParseUnknownToken.html"><span>BN\Compiler\Parser\Token\ParseUnknownToken</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li class="last"><div class="last"><a href="class-BN.Compiler.Parser.Token.ParseValue.html"><span>BN\Compiler\Parser\Token\ParseValue</span></a>
+			
+			
+			</div>
+
+				</ul></li>
+
+			<li><div class="notlast"><a href="class-BN.Compiler.Postfix.Operands.Operands.html"><span>BN\Compiler\Postfix\Operands\Operands</span></a>
+			
+			
+			</div>
+
+				<ul>
+
+			<li><div class="notlast"><a href="class-BN.Compiler.Postfix.Operands.AtLeastN.html"><span>BN\Compiler\Postfix\Operands\AtLeastN</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li class="last"><div class="last"><a href="class-BN.Compiler.Postfix.Operands.FixedCount.html"><span>BN\Compiler\Postfix\Operands\FixedCount</span></a>
+			
+			
+			</div>
+
+				</ul></li>
+
+			<li><div class="notlast"><a href="class-BN.Compiler.Postfix.Operands.OperandsSummary.html"><span>BN\Compiler\Postfix\Operands\OperandsSummary</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BN.Compiler.Postfix.Operator.AssignOperator.html"><span>BN\Compiler\Postfix\Operator\AssignOperator</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BN.Compiler.Postfix.Operator.CallbackEvaluator.html"><span>BN\Compiler\Postfix\Operator\CallbackEvaluator</span></a>
+			 implements 
+				<a href="class-BN.Compiler.Postfix.Operator.OperatorEvaluator.html"><span>BN\Compiler\Postfix\Operator\OperatorEvaluator</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BN.Compiler.Postfix.PostfixEvaluator.html"><span>BN\Compiler\Postfix\PostfixEvaluator</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BN.Compiler.Postfix.ProcessToken.html"><span>BN\Compiler\Postfix\ProcessToken</span></a>
+			
+			
+			</div>
+
+				<ul>
+
+			<li><div class="notlast"><a href="class-BN.Compiler.Postfix.Token.ProcessAssign.html"><span>BN\Compiler\Postfix\Token\ProcessAssign</span></a>
+			 implements 
+				<a href="class-BN.Compiler.Postfix.Token.ProcessKeywordStrategy.html"><span>BN\Compiler\Postfix\Token\ProcessKeywordStrategy</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BN.Compiler.Postfix.Token.ProcessConstant.html"><span>BN\Compiler\Postfix\Token\ProcessConstant</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BN.Compiler.Postfix.Token.ProcessOperator.html"><span>BN\Compiler\Postfix\Token\ProcessOperator</span></a>
+			 implements 
+				<a href="class-BN.Compiler.Postfix.Token.ProcessKeywordStrategy.html"><span>BN\Compiler\Postfix\Token\ProcessKeywordStrategy</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BN.Compiler.Postfix.Token.ProcessUnknown.html"><span>BN\Compiler\Postfix\Token\ProcessUnknown</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li class="last"><div class="last"><a href="class-BN.Compiler.Postfix.Token.ProcessValue.html"><span>BN\Compiler\Postfix\Token\ProcessValue</span></a>
+			
+			
+			</div>
+
+				</ul></li>
+
+			<li><div class="notlast"><a href="class-BN.Compiler.Postfix.StackAccumulator.html"><span>BN\Compiler\Postfix\StackAccumulator</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BN.Compiler.Postfix.Token.ProcessKeyword.html"><span>BN\Compiler\Postfix\Token\ProcessKeyword</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BN.Compiler.Postfix.Variables.html"><span>BN\Compiler\Postfix\Variables</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BN.Compiler.ResponderDecorator.html"><span>BN\Compiler\ResponderDecorator</span></a>
+			 implements 
+				<a href="class-BN.Compiler.EvaluatorResponder.html"><span>BN\Compiler\EvaluatorResponder</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BN.Compiler.Scanner.Converter.LexemeToAssign.html"><span>BN\Compiler\Scanner\Converter\LexemeToAssign</span></a>
+			 implements 
+				<a href="class-BN.Compiler.Scanner.LexemeConverter.html"><span>BN\Compiler\Scanner\LexemeConverter</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BN.Compiler.Scanner.Converter.LexemeToBNNumber.html"><span>BN\Compiler\Scanner\Converter\LexemeToBNNumber</span></a>
+			 implements 
+				<a href="class-BN.Compiler.Scanner.LexemeConverter.html"><span>BN\Compiler\Scanner\LexemeConverter</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BN.Compiler.Scanner.Converter.LexemeToConstant.html"><span>BN\Compiler\Scanner\Converter\LexemeToConstant</span></a>
+			 implements 
+				<a href="class-BN.Compiler.Scanner.LexemeConverter.html"><span>BN\Compiler\Scanner\LexemeConverter</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BN.Compiler.Scanner.Converter.LexemeToKeyword.html"><span>BN\Compiler\Scanner\Converter\LexemeToKeyword</span></a>
+			 implements 
+				<a href="class-BN.Compiler.Scanner.LexemeConverter.html"><span>BN\Compiler\Scanner\LexemeConverter</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BN.Compiler.Scanner.Converter.LexemeToSignedNumber.html"><span>BN\Compiler\Scanner\Converter\LexemeToSignedNumber</span></a>
+			 implements 
+				<a href="class-BN.Compiler.Scanner.LexemeConverter.html"><span>BN\Compiler\Scanner\LexemeConverter</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BN.Compiler.Scanner.Converter.LexemeToUnknown.html"><span>BN\Compiler\Scanner\Converter\LexemeToUnknown</span></a>
+			 implements 
+				<a href="class-BN.Compiler.Scanner.LexemeConverter.html"><span>BN\Compiler\Scanner\LexemeConverter</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BN.Compiler.Scanner.Converter.LexemeToUnsignedNumber.html"><span>BN\Compiler\Scanner\Converter\LexemeToUnsignedNumber</span></a>
+			 implements 
+				<a href="class-BN.Compiler.Scanner.LexemeConverter.html"><span>BN\Compiler\Scanner\LexemeConverter</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BN.Compiler.Scanner.Converter.LexemeToVariable.html"><span>BN\Compiler\Scanner\Converter\LexemeToVariable</span></a>
+			 implements 
+				<a href="class-BN.Compiler.Scanner.LexemeConverter.html"><span>BN\Compiler\Scanner\LexemeConverter</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BN.Compiler.Scanner.LexemeToToken.html"><span>BN\Compiler\Scanner\LexemeToToken</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BN.Compiler.Scanner.LexemeToTokens.html"><span>BN\Compiler\Scanner\LexemeToTokens</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BN.Compiler.Scanner.Scanner.html"><span>BN\Compiler\Scanner\Scanner</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BN.Compiler.Scanner.Statement.html"><span>BN\Compiler\Scanner\Statement</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BN.Compiler.Scanner.UnarySignsScanner.html"><span>BN\Compiler\Scanner\UnarySignsScanner</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BN.Compiler.Token.Token.html"><span>BN\Compiler\Token\Token</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BN.Compiler.Token.TokenType.html"><span>BN\Compiler\Token\TokenType</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BN.Number.html"><span>BN\Number</span></a>
+			 implements 
+				<a href="class-BN.INumber.html"><span>BN\INumber</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BN.NumberFactory.html"><span>BN\NumberFactory</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BN.OperatorsFactory.html"><span>BN\OperatorsFactory</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-Demo.Benchmark.html"><span>Demo\Benchmark</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-Demo.Controller.html"><span>Demo\Controller</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-Demo.Model.html"><span>Demo\Model</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-Demo.NativeEval.html"><span>Demo\NativeEval</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li class="last"><div class="last"><a href="class-Demo.Presenter.html"><span>Demo\Presenter</span></a>
+			 implements 
+				<a href="class-BN.Compiler.EvaluatorResponder.html"><span>BN\Compiler\EvaluatorResponder</span></a>
+			
+			
+			</div>
+
+		</li>
+		
+	</ul>
+</div>
+
+		<h3>Interfaces</h3>
+<div class="tree">
+	<ul>
+
+			<li><div class="notlast"><a href="class-BN.Compiler.EvaluatorResponder.html"><span>BN\Compiler\EvaluatorResponder</span></a>
+			 implements 
+				<a href="class-BN.Compiler.Parser.ParserErrorHandler.html"><span>BN\Compiler\Parser\ParserErrorHandler</span></a>, 
+			
+				<a href="class-BN.Compiler.Postfix.CalculatorErrorHandler.html"><span>BN\Compiler\Postfix\CalculatorErrorHandler</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BN.Compiler.Parser.ParserErrorHandler.html"><span>BN\Compiler\Parser\ParserErrorHandler</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BN.Compiler.Postfix.CalculatorErrorHandler.html"><span>BN\Compiler\Postfix\CalculatorErrorHandler</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BN.Compiler.Postfix.Operator.OperatorEvaluator.html"><span>BN\Compiler\Postfix\Operator\OperatorEvaluator</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BN.Compiler.Postfix.Token.ProcessKeywordStrategy.html"><span>BN\Compiler\Postfix\Token\ProcessKeywordStrategy</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BN.Compiler.Scanner.LexemeConverter.html"><span>BN\Compiler\Scanner\LexemeConverter</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li class="last"><div class="last"><a href="class-BN.INumber.html"><span>BN\INumber</span></a>
+			
+			
+			</div>
+
+		</li>
+		
+	</ul>
+</div>
+
+
+		<h3>Exceptions</h3>
+<div class="tree">
+	<ul>
+
+			<li class="last"><div class="last"><span>Exception</span>			
+			
+			</div>
+
+				<ul>
+
+			<li class="last"><div class="last"><span>LogicException</span>			
+			
+			</div>
+
+				<ul>
+
+			<li class="last"><div class="last"><span>InvalidArgumentException</span>			
+			
+			</div>
+
+				<ul>
+
+			<li class="last"><div class="last"><a href="class-BN.Collections.NullArgumentException.html"><span>BN\Collections\NullArgumentException</span></a>
+			
+			
+			</div>
+
+		</li>
+		</ul></li></ul></li></ul></li>
+	</ul>
+</div>
+</div>
+
+	<div id="footer">
+		BN-PHP - Big Number data type for PHP API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

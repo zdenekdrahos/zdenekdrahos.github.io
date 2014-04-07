@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class BN\NumberFactory | BN-PHP - Big Number data type for PHP</title>
+
+	<script type="text/javascript" src="resources/combined.js?670845959"></script>
+	<script type="text/javascript" src="elementlist.js?1607198991"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-BN.html">BN<span></span></a>
+						<ul>
+				<li><a href="namespace-BN.Collections.html">Collections</a>
+						</li>
+				<li><a href="namespace-BN.Compiler.html">Compiler<span></span></a>
+						<ul>
+				<li><a href="namespace-BN.Compiler.Grammar.html">Grammar</a>
+						</li>
+				<li><a href="namespace-BN.Compiler.Parser.html">Parser<span></span></a>
+						<ul>
+				<li><a href="namespace-BN.Compiler.Parser.Operator.html">Operator</a>
+						</li>
+				<li><a href="namespace-BN.Compiler.Parser.Token.html">Token</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-BN.Compiler.Postfix.html">Postfix<span></span></a>
+						<ul>
+				<li><a href="namespace-BN.Compiler.Postfix.Operands.html">Operands</a>
+						</li>
+				<li><a href="namespace-BN.Compiler.Postfix.Operator.html">Operator</a>
+						</li>
+				<li><a href="namespace-BN.Compiler.Postfix.Token.html">Token</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-BN.Compiler.Scanner.html">Scanner<span></span></a>
+						<ul>
+				<li><a href="namespace-BN.Compiler.Scanner.Converter.html">Converter</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-BN.Compiler.Token.html">Token</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Demo.html">Demo</a>
+						</li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-BN.AggregateFunctions.html">AggregateFunctions</a></li>
+				<li><a href="class-BN.Number.html">Number</a></li>
+				<li class="active"><a href="class-BN.NumberFactory.html">NumberFactory</a></li>
+				<li><a href="class-BN.OperatorsFactory.html">OperatorsFactory</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-BN.INumber.html">INumber</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-BN.html" title="Summary of BN"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class NumberFactory</h1>
+
+
+	<div class="description">
+	
+<p>Factory for creating @see Number from string, integer, float or object.
+Useful for creating numbers from different types because Number throws
+\InvalidArgumentException if argument in constructor is not string. It can also
+create numbers for mathematical constants pi and e.</p>
+
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-BN.html">BN</a><br />
+		
+
+		<b>Located at</b> <a href="source-class-BN.NumberFactory.html#10-94" title="Go to source code">lib/BN/NumberFactory.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-BN.NumberFactory.html#21-24" title="Go to source code">__construct</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="createNumber" id="_createNumber">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-BN.INumber.html">BN\INumber</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_createNumber">#</a>
+		<code><a href="source-class-BN.NumberFactory.html#26-40" title="Go to source code">createNumber</a>( <span>string|integer|float|object <var>$number</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Try to create new @see Number from an argument.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Try to create new @see Number from an argument.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$number</var></dt>
+					<dd><code>string|integer|float|object</code><br>$number</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-BN.INumber.html">BN\INumber</a></code></code><br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code>InvalidArgumentException</code><br>if $number is not numeric string, int, float or object with __toString() method<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="createPI" id="_createPI">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-BN.Number.html">BN\Number</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_createPI">#</a>
+		<code><a href="source-class-BN.NumberFactory.html#42-50" title="Go to source code">createPI</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns a new number which represents a mathematical constant π (PI).
+Precision of the constant is 200 digits after decimal point.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns a new number which represents a mathematical constant π (PI).
+Precision of the constant is 200 digits after decimal point.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-BN.Number.html">BN\Number</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="createEulerNumber" id="_createEulerNumber">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-BN.Number.html">BN\Number</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_createEulerNumber">#</a>
+		<code><a href="source-class-BN.NumberFactory.html#52-60" title="Go to source code">createEulerNumber</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns a new number which represents a mathematical constant e (Euler's
+number). Precision of the constant is 200 digits after decimal point.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns a new number which represents a mathematical constant e (Euler's
+number). Precision of the constant is 200 digits after decimal point.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-BN.Number.html">BN\Number</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		BN-PHP - Big Number data type for PHP API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

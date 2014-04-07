@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class BN\Compiler\Parser\QueueAccumulator | BN-PHP - Big Number data type for PHP</title>
+
+	<script type="text/javascript" src="resources/combined.js?670845959"></script>
+	<script type="text/javascript" src="elementlist.js?1607198991"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-BN.html">BN<span></span></a>
+						<ul>
+				<li><a href="namespace-BN.Collections.html">Collections</a>
+						</li>
+				<li class="active"><a href="namespace-BN.Compiler.html">Compiler<span></span></a>
+						<ul>
+				<li><a href="namespace-BN.Compiler.Grammar.html">Grammar</a>
+						</li>
+				<li class="active"><a href="namespace-BN.Compiler.Parser.html">Parser<span></span></a>
+						<ul>
+				<li><a href="namespace-BN.Compiler.Parser.Operator.html">Operator</a>
+						</li>
+				<li><a href="namespace-BN.Compiler.Parser.Token.html">Token</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-BN.Compiler.Postfix.html">Postfix<span></span></a>
+						<ul>
+				<li><a href="namespace-BN.Compiler.Postfix.Operands.html">Operands</a>
+						</li>
+				<li><a href="namespace-BN.Compiler.Postfix.Operator.html">Operator</a>
+						</li>
+				<li><a href="namespace-BN.Compiler.Postfix.Token.html">Token</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-BN.Compiler.Scanner.html">Scanner<span></span></a>
+						<ul>
+				<li><a href="namespace-BN.Compiler.Scanner.Converter.html">Converter</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-BN.Compiler.Token.html">Token</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Demo.html">Demo</a>
+						</li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-BN.Compiler.Parser.QueueAccumulator.html">QueueAccumulator</a></li>
+				<li><a href="class-BN.Compiler.Parser.ShuntingYardParser.html">ShuntingYardParser</a></li>
+				<li><a href="class-BN.Compiler.Parser.StackCleaning.html">StackCleaning</a></li>
+				<li><a href="class-BN.Compiler.Parser.TokenParser.html">TokenParser</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-BN.Compiler.Parser.ParserErrorHandler.html">ParserErrorHandler</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-BN.Compiler.Parser.html" title="Summary of BN\Compiler\Parser"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class QueueAccumulator</h1>
+
+
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-BN.html">BN</a>\<a href="namespace-BN.Compiler.html">Compiler</a>\<a href="namespace-BN.Compiler.Parser.html">Parser</a><br />
+		
+
+		<b>Located at</b> <a href="source-class-BN.Compiler.Parser.QueueAccumulator.html#10-91" title="Go to source code">lib/BN/Compiler/Parser/QueueAccumulator.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-BN.Compiler.Parser.QueueAccumulator.html#17-21" title="Go to source code">__construct</a>( <span><code><a href="class-BN.Compiler.Parser.ParserErrorHandler.html">BN\Compiler\Parser\ParserErrorHandler</a></code> <var>$errorHandler</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="init" id="_init">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_init">#</a>
+		<code><a href="source-class-BN.Compiler.Parser.QueueAccumulator.html#23-28" title="Go to source code">init</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="noError" id="_noError">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_noError">#</a>
+		<code><a href="source-class-BN.Compiler.Parser.QueueAccumulator.html#30-33" title="Go to source code">noError</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="pushTokenToStack" id="_pushTokenToStack">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_pushTokenToStack">#</a>
+		<code><a href="source-class-BN.Compiler.Parser.QueueAccumulator.html#35-38" title="Go to source code">pushTokenToStack</a>( <span><code><a href="class-BN.Compiler.Token.Token.html">BN\Compiler\Token\Token</a></code> <var>$token</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="popTokenFromStack" id="_popTokenFromStack">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_popTokenFromStack">#</a>
+		<code><a href="source-class-BN.Compiler.Parser.QueueAccumulator.html#40-43" title="Go to source code">popTokenFromStack</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isStackEmpty" id="_isStackEmpty">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isStackEmpty">#</a>
+		<code><a href="source-class-BN.Compiler.Parser.QueueAccumulator.html#45-48" title="Go to source code">isStackEmpty</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isOperatorAtTopOfStack" id="_isOperatorAtTopOfStack">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isOperatorAtTopOfStack">#</a>
+		<code><a href="source-class-BN.Compiler.Parser.QueueAccumulator.html#50-54" title="Go to source code">isOperatorAtTopOfStack</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isTypeAtStackPeek" id="_isTypeAtStackPeek">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isTypeAtStackPeek">#</a>
+		<code><a href="source-class-BN.Compiler.Parser.QueueAccumulator.html#56-59" title="Go to source code">isTypeAtStackPeek</a>( <span>mixed <var>$tokenType</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="valueAtStackPeek" id="_valueAtStackPeek">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_valueAtStackPeek">#</a>
+		<code><a href="source-class-BN.Compiler.Parser.QueueAccumulator.html#61-64" title="Go to source code">valueAtStackPeek</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="pushTokenFromStackToQueue" id="_pushTokenFromStackToQueue">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_pushTokenFromStackToQueue">#</a>
+		<code><a href="source-class-BN.Compiler.Parser.QueueAccumulator.html#66-69" title="Go to source code">pushTokenFromStackToQueue</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="pushTokenToQueue" id="_pushTokenToQueue">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_pushTokenToQueue">#</a>
+		<code><a href="source-class-BN.Compiler.Parser.QueueAccumulator.html#71-74" title="Go to source code">pushTokenToQueue</a>( <span><code><a href="class-BN.Compiler.Token.Token.html">BN\Compiler\Token\Token</a></code> <var>$token</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="stopParsing" id="_stopParsing">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_stopParsing">#</a>
+		<code><a href="source-class-BN.Compiler.Parser.QueueAccumulator.html#76-81" title="Go to source code">stopParsing</a>( <span>mixed <var>$method</var></span>, <span>mixed <var>$arg</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getResult" id="_getResult">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getResult">#</a>
+		<code><a href="source-class-BN.Compiler.Parser.QueueAccumulator.html#83-90" title="Go to source code">getResult</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		BN-PHP - Big Number data type for PHP API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>
