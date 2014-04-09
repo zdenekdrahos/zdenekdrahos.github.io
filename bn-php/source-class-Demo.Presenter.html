@@ -8,7 +8,7 @@
 	<title>File demo/app/Presenter.php | BN-PHP - Big Number data type for PHP</title>
 
 	<script type="text/javascript" src="resources/combined.js?670845959"></script>
-	<script type="text/javascript" src="elementlist.js?1607198991"></script>
+	<script type="text/javascript" src="elementlist.js?1164383682"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -178,24 +178,33 @@
 </span><span id="54" class="l"><a class="l" href="#54">54: </a>        <span class="php-var">$this</span>-&gt;addError(<span class="php-quote">&quot;Undefined variable &lt;strong&gt;</span><span class="php-var">{$variableName}</span><span class="php-quote">&lt;/strong&gt;&quot;</span>);
 </span><span id="55" class="l"><a class="l" href="#55">55: </a>    }
 </span><span id="56" class="l"><a class="l" href="#56">56: </a>
-</span><span id="57" class="l"><a class="l" href="#57">57: </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> <a id="_addError" href="#_addError">addError</a>(<span class="php-var">$errorMessage</span>)
+</span><span id="57" class="l"><a class="l" href="#57">57: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_exception" href="#_exception">exception</a>(\Exception <span class="php-var">$e</span>)
 </span><span id="58" class="l"><a class="l" href="#58">58: </a>    {
-</span><span id="59" class="l"><a class="l" href="#59">59: </a>        <span class="php-var">$this</span>-&gt;model-&gt;error .= <span class="php-quote">&quot;&lt;em&gt;</span><span class="php-var">{$this-&gt;statementsCount}</span><span class="php-quote">:&lt;/em&gt; </span><span class="php-var">{$errorMessage}</span><span class="php-quote">\n&quot;</span>;
-</span><span id="60" class="l"><a class="l" href="#60">60: </a>    }
-</span><span id="61" class="l"><a class="l" href="#61">61: </a>
-</span><span id="62" class="l"><a class="l" href="#62">62: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_result" href="#_result">result</a>(<span class="php-var">$result</span>)
-</span><span id="63" class="l"><a class="l" href="#63">63: </a>    {
-</span><span id="64" class="l"><a class="l" href="#64">64: </a>        <span class="php-var">$this</span>-&gt;model-&gt;result = <span class="php-var">$result</span>;
-</span><span id="65" class="l"><a class="l" href="#65">65: </a>    }
-</span><span id="66" class="l"><a class="l" href="#66">66: </a>
-</span><span id="67" class="l"><a class="l" href="#67">67: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_variables" href="#_variables">variables</a>(\stdClass <span class="php-var">$variables</span>)
-</span><span id="68" class="l"><a class="l" href="#68">68: </a>    {
-</span><span id="69" class="l"><a class="l" href="#69">69: </a>        <span class="php-keyword1">foreach</span> (<span class="php-keyword2">get_object_vars</span>(<span class="php-var">$variables</span>) <span class="php-keyword1">as</span> <span class="php-var">$name</span> =&gt; <span class="php-var">$value</span>) {
-</span><span id="70" class="l"><a class="l" href="#70">70: </a>            <span class="php-var">$this</span>-&gt;model-&gt;variables[] = <span class="php-quote">&quot;\</span><span class="php-var">${$name}</span><span class="php-quote"> = </span><span class="php-var">{$value}</span><span class="php-quote">&quot;</span>;
-</span><span id="71" class="l"><a class="l" href="#71">71: </a>        }
-</span><span id="72" class="l"><a class="l" href="#72">72: </a>    }
-</span><span id="73" class="l"><a class="l" href="#73">73: </a>}
-</span><span id="74" class="l"><a class="l" href="#74">74: </a></span></code></pre>
+</span><span id="59" class="l"><a class="l" href="#59">59: </a>        <span class="php-var">$class</span> = <span class="php-keyword2">get_class</span>(<span class="php-var">$e</span>);
+</span><span id="60" class="l"><a class="l" href="#60">60: </a>        <span class="php-var">$this</span>-&gt;addError(
+</span><span id="61" class="l"><a class="l" href="#61">61: </a>            <span class="php-quote">&quot;&lt;strong&gt;</span><span class="php-var">{$class}</span><span class="php-quote">&lt;/strong&gt; in file &lt;strong&gt;</span><span class="php-var">{$e-&gt;getFile()}</span><span class="php-quote">&lt;/strong&gt; &quot;</span> .
+</span><span id="62" class="l"><a class="l" href="#62">62: </a>            <span class="php-quote">&quot;on line &lt;strong&gt;</span><span class="php-var">{$e-&gt;getLine()}</span><span class="php-quote">&lt;/strong&gt;&quot;</span>
+</span><span id="63" class="l"><a class="l" href="#63">63: </a>        );
+</span><span id="64" class="l"><a class="l" href="#64">64: </a>    }
+</span><span id="65" class="l"><a class="l" href="#65">65: </a>
+</span><span id="66" class="l"><a class="l" href="#66">66: </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> <a id="_addError" href="#_addError">addError</a>(<span class="php-var">$errorMessage</span>)
+</span><span id="67" class="l"><a class="l" href="#67">67: </a>    {
+</span><span id="68" class="l"><a class="l" href="#68">68: </a>        <span class="php-var">$this</span>-&gt;model-&gt;error .= <span class="php-quote">&quot;&lt;em&gt;</span><span class="php-var">{$this-&gt;statementsCount}</span><span class="php-quote">:&lt;/em&gt; </span><span class="php-var">{$errorMessage}</span><span class="php-quote">\n&quot;</span>;
+</span><span id="69" class="l"><a class="l" href="#69">69: </a>    }
+</span><span id="70" class="l"><a class="l" href="#70">70: </a>
+</span><span id="71" class="l"><a class="l" href="#71">71: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_result" href="#_result">result</a>(<span class="php-var">$result</span>)
+</span><span id="72" class="l"><a class="l" href="#72">72: </a>    {
+</span><span id="73" class="l"><a class="l" href="#73">73: </a>        <span class="php-var">$this</span>-&gt;model-&gt;result = <span class="php-var">$result</span>;
+</span><span id="74" class="l"><a class="l" href="#74">74: </a>    }
+</span><span id="75" class="l"><a class="l" href="#75">75: </a>
+</span><span id="76" class="l"><a class="l" href="#76">76: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_variables" href="#_variables">variables</a>(\stdClass <span class="php-var">$variables</span>)
+</span><span id="77" class="l"><a class="l" href="#77">77: </a>    {
+</span><span id="78" class="l"><a class="l" href="#78">78: </a>        <span class="php-keyword1">foreach</span> (<span class="php-keyword2">get_object_vars</span>(<span class="php-var">$variables</span>) <span class="php-keyword1">as</span> <span class="php-var">$name</span> =&gt; <span class="php-var">$value</span>) {
+</span><span id="79" class="l"><a class="l" href="#79">79: </a>            <span class="php-var">$this</span>-&gt;model-&gt;variables[] = <span class="php-quote">&quot;\</span><span class="php-var">${$name}</span><span class="php-quote"> = </span><span class="php-var">{$value}</span><span class="php-quote">&quot;</span>;
+</span><span id="80" class="l"><a class="l" href="#80">80: </a>        }
+</span><span id="81" class="l"><a class="l" href="#81">81: </a>    }
+</span><span id="82" class="l"><a class="l" href="#82">82: </a>}
+</span><span id="83" class="l"><a class="l" href="#83">83: </a></span></code></pre>
 
 	<div id="footer">
 		BN-PHP - Big Number data type for PHP API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
