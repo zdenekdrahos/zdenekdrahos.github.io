@@ -5,20 +5,10 @@
   <id>http://zdenekdrahos.bitbucket.org/</id>
   <link href="http://zdenekdrahos.bitbucket.org/"/>
   <link href="http://zdenekdrahos.bitbucket.org/atom.xml" rel="self" type="application/atom+xml"/>
-  <updated>2015-12-21T14:07:00+00:00</updated>
+  <updated>2015-02-20T09:59:00+00:00</updated>
   <author>
     <name>Zdeněk Drahoš</name>
   </author>
-  <entry xml:lang="cs">
-    <title>Nedostatky Nette při přechodu ze Symfony2</title>
-    <link href="https://quip.com/1DAjAVxx9gZ8"/>
-    <id>https://quip.com/1DAjAVxx9gZ8</id>
-    <updated>2015-12-21T14:07:00+00:00</updated>
-    <summary>Předchozí projekty, na kterých jsem pracoval, byly v Symfony. Jakmile potom přecházíte z jednoho do druhého, 
-tak se vždycky najde pár věcí, které jsou v jednom či druhém řešeny lépe. Framework nikdy nevyhoví všem,
-tak jsem sepsal, s čím bojuji v Nette. 
-</summary>
-  </entry>
   <entry xml:lang="en">
     <title>HTTP Caching in Symfony2 - max-age, ETag &amp; gzip</title>
     <link href="https://coderwall.com/p/rl6v7a"/>
