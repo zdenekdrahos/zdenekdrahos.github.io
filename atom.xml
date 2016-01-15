@@ -5,7 +5,7 @@
   <id>http://zdenekdrahos.bitbucket.org/</id>
   <link href="http://zdenekdrahos.bitbucket.org/"/>
   <link href="http://zdenekdrahos.bitbucket.org/atom.xml" rel="self" type="application/atom+xml"/>
-  <updated>2016-01-23T16:37:00+00:00</updated>
+  <updated>2016-01-1T15:07:00+00:00</updated>
   <author>
     <name>Zdeněk Drahoš</name>
   </author>
@@ -13,7 +13,7 @@
     <title>Nedostatky Nette při přechodu ze Symfony2</title>
     <link href="https://quip.com/1DAjAVxx9gZ8"/>
     <id>https://quip.com/1DAjAVxx9gZ8</id>
-    <updated>2016-01-23T16:37:00+00:00</updated>
+    <updated>2016-01-13T16:37:00+00:00</updated>
     <summary>Předchozí projekty, na kterých jsem pracoval, byly v Symfony. Jakmile potom přecházíte z jednoho do druhého, 
 tak se vždycky najde pár věcí, které jsou v jednom či druhém řešeny lépe. Framework nikdy nevyhoví všem,
 tak jsem sepsal, s čím bojuji v Nette. 
