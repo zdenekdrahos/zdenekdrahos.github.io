@@ -5,10 +5,19 @@
   <id>http://zdenekdrahos.bitbucket.org/</id>
   <link href="http://zdenekdrahos.bitbucket.org/"/>
   <link href="http://zdenekdrahos.bitbucket.org/atom.xml" rel="self" type="application/atom+xml"/>
-  <updated>2016-01-1T15:07:00+00:00</updated>
+  <updated>2016-05-04T18:10:00+00:00</updated>
   <author>
     <name>Zdeněk Drahoš</name>
   </author>
+  <entry xml:lang="en">
+    <title>Redirect authenticated user on anonymous pages in Symfony</title>
+    <link href="https://coderwall.com/p/w0yyag"/>
+    <id>https://coderwall.com/p/w0yyag</id>
+    <updated>2016-05-04T18:10:00+00:00</updated>
+    <summary>What should happen when an authenticated user goes to login page, registration page, forgotten password etc.?
+One option is to do nothing - just display the  page and let the user decide what he wants to do. Redirecting the user might be a better solution.
+</summary>
+  </entry>
   <entry xml:lang="cs">
     <title>Nedostatky Nette při přechodu ze Symfony2</title>
     <link href="https://quip.com/1DAjAVxx9gZ8"/>
