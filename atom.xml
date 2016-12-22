@@ -5,10 +5,20 @@
   <id>http://zdenekdrahos.bitbucket.org/</id>
   <link href="http://zdenekdrahos.bitbucket.org/"/>
   <link href="http://zdenekdrahos.bitbucket.org/atom.xml" rel="self" type="application/atom+xml"/>
-  <updated>2016-05-04T18:10:00+00:00</updated>
+  <updated>2016-12-18T18:00:00+00:00</updated>
   <author>
     <name>Zdeněk Drahoš</name>
   </author>
+  <entry xml:lang="cs">
+    <title>Evoluce backendu rozpisů zápasů - z hg a Phalconu do gitu, Silexu, Circle.ci a Loggly</title>
+    <link href="http://www.rozpisyzapasu.cz/blog/dev-status-prechod-na-git-silex-2016-12-18.html"/>
+    <id>http://www.rozpisyzapasu.cz/blog/dev-status-prechod-na-git-silex-2016-12-18.html</id>
+    <updated>2016-12-18T18:00:00+00:00</updated>
+    <summary>Aplikaci jsem začal vyvíjet v únoru 2014 jako diplomku. Od té doby jsem přešel z akademického prostředí do práce 
+a z Windows na Linux/MacOS, takže aplikuji zkušeností a praktiky z práce.
+Prvotním impulsem změny byla jen phpqa analýza kódu&amp;hellip;
+</summary>
+  </entry>
   <entry xml:lang="en">
     <title>Redirect authenticated user on anonymous pages in Symfony</title>
     <link href="https://coderwall.com/p/w0yyag"/>
