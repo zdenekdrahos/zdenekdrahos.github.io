@@ -2,9 +2,9 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Zdeněk Drahoš</title>
   <subtitle>Zdeněk Drahoš blog</subtitle>
-  <id>http://zdenekdrahos.bitbucket.org/</id>
-  <link href="http://zdenekdrahos.bitbucket.org/"/>
-  <link href="http://zdenekdrahos.bitbucket.org/atom.xml" rel="self" type="application/atom+xml"/>
+  <id>https://zdenekdrahos.github.io/</id>
+  <link href="https://zdenekdrahos.github.io/"/>
+  <link href="https://zdenekdrahos.github.io/atom.xml" rel="self" type="application/atom+xml"/>
   <updated>2016-12-18T18:00:00+00:00</updated>
   <author>
     <name>Zdeněk Drahoš</name>
