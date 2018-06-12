@@ -5,10 +5,37 @@
   <id>https://zdenekdrahos.github.io/</id>
   <link href="https://zdenekdrahos.github.io/"/>
   <link href="https://zdenekdrahos.github.io/atom.xml" rel="self" type="application/atom+xml"/>
-  <updated>2016-12-18T18:00:00+00:00</updated>
+  <updated>2017-05-14T08:10:00+00:00</updated>
   <author>
     <name>Zdeněk Drahoš</name>
   </author>
+  <entry xml:lang="en">
+    <title>Import projects to Costlocker</title>
+    <link href="https://costlocker.github.io/blog/2017-05-14-import-projects-to-costlocker.html"/>
+    <id>https://costlocker.github.io/blog/2017-05-14-import-projects-to-costlocker.html</id>
+    <updated>2017-05-14T08:10:00+00:00</updated>
+    <summary>Are you using Harvest, Teamwork, JIRA, Asana, Toggl, … but missing some functionality like profits, revenues, etc…?
+Costlocker is now able to create and update projects via its API.
+</summary>
+  </entry>
+  <entry xml:lang="en">
+    <title>Use Costlocker webhooks for pushing notifications</title>
+    <link href="https://costlocker.github.io/blog/2017-04-03-use-webhooks-for-pushing-notifications.html"/>
+    <id>https://costlocker.github.io/blog/2017-04-03-use-webhooks-for-pushing-notifications.html</id>
+    <updated>2017-04-03T08:10:00+00:00</updated>
+    <summary>If you’re familiar with webhooks it shouldn’t take long to integrate webhooks from Costlocker.
+It's easy to start pushing Costlocker notifications to Slack, ...    
+</summary>
+  </entry>
+  <entry xml:lang="en">
+    <title>Import Toggl weekly report to Costlocker</title>
+    <link href="https://costlocker.github.io/blog/2017-03-08-import-toggl-weekly-report-to-costlocker.html"/>
+    <id>https://costlocker.github.io/blog/2017-03-08-import-toggl-weekly-report-to-costlocker.html</id>
+    <updated>2017-03-08T08:10:00+00:00</updated>
+    <summary>Are you using Toggl as your primary tracking tool instead of Costlocker? Do you still want to know the profitability of your business and employees?
+Costlocker is now able to simply import all your Toggl tracked hours and process them.
+</summary>
+  </entry>
   <entry xml:lang="cs">
     <title>Evoluce backendu rozpisů zápasů - z hg a Phalconu do gitu, Silexu, Circle.ci a Loggly</title>
     <link href="https://www.rozpisyzapasu.cz/blog/dev-status-prechod-na-git-silex-2016-12-18.html"/>
