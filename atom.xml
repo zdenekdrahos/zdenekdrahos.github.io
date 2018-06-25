@@ -5,10 +5,19 @@
   <id>https://zdenekdrahos.github.io/</id>
   <link href="https://zdenekdrahos.github.io/"/>
   <link href="https://zdenekdrahos.github.io/atom.xml" rel="self" type="application/atom+xml"/>
-  <updated>2017-05-14T08:10:00+00:00</updated>
+  <updated>2018-06-25T10:00:00+00:00</updated>
   <author>
     <name>Zdeněk Drahoš</name>
   </author>
+  <entry xml:lang="en">
+    <title>Editing Middleman site with Netlify CMS and GitLab</title>
+    <link href="https://coderwall.com/p/e8ms-q"/>
+    <id>https://coderwall.com/p/e8ms-q</id>
+    <updated>2018-06-25T10:00:00+00:00</updated>
+    <summary>Static site generators are great in its simplicity. But editing content is a challenge for less technically experienced people.
+Netlify CMS solves it all without needing complex CMS solutions. Keep it simple!
+</summary>
+  </entry>
   <entry xml:lang="en">
     <title>Import projects to Costlocker</title>
     <link href="https://costlocker.github.io/blog/2017-05-14-import-projects-to-costlocker.html"/>
