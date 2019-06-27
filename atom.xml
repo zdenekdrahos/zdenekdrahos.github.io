@@ -5,10 +5,19 @@
   <id>https://zdenekdrahos.github.io/</id>
   <link href="https://zdenekdrahos.github.io/"/>
   <link href="https://zdenekdrahos.github.io/atom.xml" rel="self" type="application/atom+xml"/>
-  <updated>2018-06-25T10:00:00+00:00</updated>
+  <updated>2019-06-22T12:00:00+00:00</updated>
   <author>
     <name>Zdeněk Drahoš</name>
   </author>
+  <entry xml:lang="en">
+    <title>Docker volumes - www-data on Debian/Ubuntu + Alpine image</title>
+    <link href="https://gist.github.com/zdenekdrahos/53f16cfe902ff5f820a01b79e8c76a01"/>
+    <id>https://gist.github.com/zdenekdrahos/53f16cfe902ff5f820a01b79e8c76a01</id>
+    <updated>2019-06-22T12:00:00+00:00</updated>
+    <summary>Sharing host OS www-data directories as a volume is tricky for Alpine images. User ID (UID) and Group ID (GID) are different.
+How to avoid "Permission denied" errors when e.g. PHP FPM worker saves session to a shared directory?
+</summary>
+  </entry>
   <entry xml:lang="en">
     <title>Editing Middleman site with Netlify CMS and GitLab</title>
     <link href="https://coderwall.com/p/e8ms-q"/>
