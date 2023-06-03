@@ -45,24 +45,5 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
     }
 }())
 ;
-</script> <script>
-           self._ga = {
-             data: {
-               v: "1",
-               tid: "UA-97091273-1",
-               cid: `${Date.now()}${Math.random()}`,
-               dl: location.href,
-               aip: 1,
-             },
-             send(additionalParams) {
-               navigator.sendBeacon(
-                 "https://google-analytics.com/collect",
-                 new URLSearchParams({
-                   ...this.data,
-                   ...additionalParams,
-                 }).toString()
-               );
-             },
-           };
-           _ga.send({ t: "pageview" });
-         </script> </body> </html>
+</script>
+</body> </html>
